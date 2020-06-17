@@ -1,0 +1,295 @@
+i	i_clean	j	j_clean
+American University, Washington, DC	American	Texas A&M, College Station, TX	Texas A&M
+Texas A&M, College Station, TX	Texas A&M	American University, Washington, DC	American
+New York University, New York	NYU	Universitat Pompeu Fabra, Barcelona	UPF
+Universitat Pompeu Fabra, Barcelona	UPF	New York University, New York	NYU
+University of Leeds, Leeds	Leeds	University of South Carolina, Columbia	USC
+University of South Carolina, Columbia	USC	University of Leeds, Leeds	Leeds
+European University Institute, Florence	EUI	London School of Economics and Political Science, London	LSE
+London School of Economics and Political Science, London	LSE	European University Institute, Florence	EUI
+Hertie SchoolBerlin's University of GovernanceFriedrichstrasse Berlin, Germany, Berlin	Hertie	University of Oxford,Department of Political Science and International RelationsManor Road, Oxford	Oxford
+University of Oxford,Department of Political Science and International RelationsManor Road, Oxford	Oxford	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse Berlin, Germany, Berlin	Hertie
+Birkbeck, University of London, London	Birkbeck	University of Oxford, Oxford	Oxford
+University of Oxford, Oxford	Oxford	Birkbeck, University of London, London	Birkbeck
+BI Norwegian Business School, Oslo	NBS Oslo	Norwegian Institute for Public Health, Oslo	NIPH Oslo
+Norwegian Institute for Public Health, Oslo	NIPH Oslo	BI Norwegian Business School, Oslo	NBS Oslo
+Duke University, Durham	Duke	IAST, Toulouse	IAST Toulouse
+IAST, Toulouse	IAST Toulouse	Duke University, Durham	Duke
+Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio	Tufts University, Boston	Tufts
+Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio	Univeristy of Bologna, Bologna	Bologna
+Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio	University of Milano-Bicocca, Milan	Milano-Bicocca
+Tufts University, Boston	Tufts	Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio
+Tufts University, Boston	Tufts	Univeristy of Bologna, Bologna	Bologna
+Tufts University, Boston	Tufts	University of Milano-Bicocca, Milan	Milano-Bicocca
+Univeristy of Bologna, Bologna	Bologna	Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio
+Univeristy of Bologna, Bologna	Bologna	Tufts University, Boston	Tufts
+Univeristy of Bologna, Bologna	Bologna	University of Milano-Bicocca, Milan	Milano-Bicocca
+University of Milano-Bicocca, Milan	Milano-Bicocca	Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio
+University of Milano-Bicocca, Milan	Milano-Bicocca	Tufts University, Boston	Tufts
+University of Milano-Bicocca, Milan	Milano-Bicocca	Univeristy of Bologna, Bologna	Bologna
+Bocconi University, Milan	Bocconi	London School of Economics and Political Science, London	LSE
+London School of Economics and Political Science, London	LSE	Bocconi University, Milan	Bocconi
+University of Geneva, Geneva	Geneva	University of Lucerne, Lucerne	Lucerne
+University of Lucerne, Lucerne	Lucerne	University of Geneva, Geneva	Geneva
+IAST, Toulouse	IAST Toulouse	University of Essex, Colchester	Essex
+University of Essex, Colchester	Essex	IAST, Toulouse	IAST Toulouse
+London School of Economics and Political Science, London	LSE	Universitat Pompeu Fabra, Barcelona	UPF
+Universitat Pompeu Fabra, Barcelona	UPF	London School of Economics and Political Science, London	LSE
+George Washington University, Washington DC	GWU	University of Zurich, Zurich	Zurich
+University of Zurich, Zurich	Zurich	George Washington University, Washington DC	GWU
+Kobe University, Kobe	Kobe	Tokyo University of Science, Tokyo	TUS Tokyo
+Tokyo University of Science, Tokyo	TUS Tokyo	Kobe University, Kobe	Kobe
+Sciences Po, Paris	Sciences Po	University of Cambridge, Cambridge	Cambridge
+Sciences Po, Paris	Sciences Po	University of Essex, Wivenhoe	Essex
+Sciences Po, Paris	Sciences Po	University of Mannheim, Mannheim	Mannheim
+University of Cambridge, Cambridge	Cambridge	Sciences Po, Paris	Sciences Po
+University of Cambridge, Cambridge	Cambridge	University of Essex, Wivenhoe	Essex
+University of Cambridge, Cambridge	Cambridge	University of Mannheim, Mannheim	Mannheim
+University of Essex, Wivenhoe	Essex	Sciences Po, Paris	Sciences Po
+University of Essex, Wivenhoe	Essex	University of Cambridge, Cambridge	Cambridge
+University of Essex, Wivenhoe	Essex	University of Mannheim, Mannheim	Mannheim
+University of Mannheim, Mannheim	Mannheim	Sciences Po, Paris	Sciences Po
+University of Mannheim, Mannheim	Mannheim	University of Cambridge, Cambridge	Cambridge
+University of Mannheim, Mannheim	Mannheim	University of Essex, Wivenhoe	Essex
+Hertie School, Berlin	Hertie	Princeton University, Princeton	Princeton
+Hertie School, Berlin	Hertie	UIUC, Urbana-Champaign	UIUC
+Hertie School, Berlin	Hertie	University of Mannheim, Mannheim	Mannheim
+Hertie School, Berlin	Hertie	USC, Los Angeles	USC
+Princeton University, Princeton	Princeton	Hertie School, Berlin	Hertie
+Princeton University, Princeton	Princeton	UIUC, Urbana-Champaign	UIUC
+Princeton University, Princeton	Princeton	University of Mannheim, Mannheim	Mannheim
+Princeton University, Princeton	Princeton	USC, Los Angeles	USC
+UIUC, Urbana-Champaign	UIUC	Hertie School, Berlin	Hertie
+UIUC, Urbana-Champaign	UIUC	Princeton University, Princeton	Princeton
+UIUC, Urbana-Champaign	UIUC	University of Mannheim, Mannheim	Mannheim
+UIUC, Urbana-Champaign	UIUC	USC, Los Angeles	USC
+University of Mannheim, Mannheim	Mannheim	Hertie School, Berlin	Hertie
+University of Mannheim, Mannheim	Mannheim	Princeton University, Princeton	Princeton
+University of Mannheim, Mannheim	Mannheim	UIUC, Urbana-Champaign	UIUC
+University of Mannheim, Mannheim	Mannheim	USC, Los Angeles	USC
+USC, Los Angeles	USC	Hertie School, Berlin	Hertie
+USC, Los Angeles	USC	Princeton University, Princeton	Princeton
+USC, Los Angeles	USC	UIUC, Urbana-Champaign	UIUC
+USC, Los Angeles	USC	University of Mannheim, Mannheim	Mannheim
+Bocconi University, Milano	Bocconi	University of Zurich, Zurich	Zurich
+Bocconi University, Milano	Bocconi	Vrije Universiteit Amsterdam, Amsterdam	Vrije Amsterdam
+University of Zurich, Zurich	Zurich	Bocconi University, Milano	Bocconi
+University of Zurich, Zurich	Zurich	Vrije Universiteit Amsterdam, Amsterdam	Vrije Amsterdam
+Vrije Universiteit Amsterdam, Amsterdam	Vrije Amsterdam	Bocconi University, Milano	Bocconi
+Vrije Universiteit Amsterdam, Amsterdam	Vrije Amsterdam	University of Zurich, Zurich	Zurich
+Duke University, Durham	Duke	Institute for Advanced Study in Toulouse, Toulouse	IAST Toulouse
+Duke University, Durham	Duke	Science Po, Paris	Sciences Po
+Institute for Advanced Study in Toulouse, Toulouse	IAST Toulouse	Duke University, Durham	Duke
+Institute for Advanced Study in Toulouse, Toulouse	IAST Toulouse	Science Po, Paris	Sciences Po
+Science Po, Paris	Sciences Po	Duke University, Durham	Duke
+Science Po, Paris	Sciences Po	Institute for Advanced Study in Toulouse, Toulouse	IAST Toulouse
+UCSD Department of Political Science, San Diego	UCSD	UCSD School of Global Policy and Strategy, San Diego	UCSD
+UCSD School of Global Policy and Strategy, San Diego	UCSD	UCSD Department of Political Science, San Diego	UCSD
+Goethe-Universität Frankfurt, Frankfurt	G-U Frankfurt	Humboldt University, Berlin	Humboldt
+Goethe-Universität Frankfurt, Frankfurt	G-U Frankfurt	University of Zurich, Zurich	Zurich
+Humboldt University, Berlin	Humboldt	Goethe-Universität Frankfurt, Frankfurt	G-U Frankfurt
+Humboldt University, Berlin	Humboldt	University of Zurich, Zurich	Zurich
+University of Zurich, Zurich	Zurich	Goethe-Universität Frankfurt, Frankfurt	G-U Frankfurt
+University of Zurich, Zurich	Zurich	Humboldt University, Berlin	Humboldt
+University of Essex, Wivenhoe	Essex	University of Maryland, Washington DC	Maryland
+University of Maryland, Washington DC	Maryland	University of Essex, Wivenhoe	Essex
+Harvard University, Cambridge	Harvard	Koç University, Istanbul	Koç
+Harvard University, Cambridge	Harvard	University of Colorado Boulder, Boulder	Boulder
+Koç University, Istanbul	Koç	Harvard University, Cambridge	Harvard
+Koç University, Istanbul	Koç	University of Colorado Boulder, Boulder	Boulder
+University of Colorado Boulder, Boulder	Boulder	Harvard University, Cambridge	Harvard
+University of Colorado Boulder, Boulder	Boulder	Koç University, Istanbul	Koç
+University of Texas at Austin, Austin	Austin	Washington University, St. Louis, St. Louis	WUSL
+Washington University, St. Louis, St. Louis	WUSL	University of Texas at Austin, Austin	Austin
+University of Amsterdam, Amsterdam	Amsterdam	University of Vienna, Vienna	Vienna
+University of Vienna, Vienna	Vienna	University of Amsterdam, Amsterdam	Amsterdam
+Collegio Carlo Alberto, Turin	Carlo Alberto	New York University, New York	NYU
+Collegio Carlo Alberto, Turin	Carlo Alberto	Yale University, New Haven	Yale
+New York University, New York	NYU	Collegio Carlo Alberto, Turin	Carlo Alberto
+New York University, New York	NYU	Yale University, New Haven	Yale
+Yale University, New Haven	Yale	Collegio Carlo Alberto, Turin	Carlo Alberto
+Yale University, New Haven	Yale	New York University, New York	NYU
+Nuffield College, University of Oxford, Oxford	Oxford	Princeton University, Princeton	Princeton
+Princeton University, Princeton	Princeton	Nuffield College, University of Oxford, Oxford	Oxford
+Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona	University of California, Merced, Merced	UC Merced
+Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona	Yale University, New Haven	Yale
+University of California, Merced, Merced	UC Merced	Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona
+University of California, Merced, Merced	UC Merced	Yale University, New Haven	Yale
+Yale University, New Haven	Yale	Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona
+Yale University, New Haven	Yale	University of California, Merced, Merced	UC Merced
+Columbia University, New York	Columbia	Yale University, New Haven	Yale
+Yale University, New Haven	Yale	Columbia University, New York	Columbia
+University of Glasgow, Glasgow	Glasgow	University of Middelsex, London	Middelsex
+University of Glasgow, Glasgow	Glasgow	University of Pittsburgh, Pittsburgh	Pittsburgh
+University of Middelsex, London	Middelsex	University of Glasgow, Glasgow	Glasgow
+University of Middelsex, London	Middelsex	University of Pittsburgh, Pittsburgh	Pittsburgh
+University of Pittsburgh, Pittsburgh	Pittsburgh	University of Glasgow, Glasgow	Glasgow
+University of Pittsburgh, Pittsburgh	Pittsburgh	University of Middelsex, London	Middelsex
+Collegio Carlo Alberto, Torino	Carlo Alberto	Columbia UniversityDepartment of Political Science, New York	Columbia
+Columbia UniversityDepartment of Political Science, New York	Columbia	Collegio Carlo Alberto, Torino	Carlo Alberto
+Georgetown University, Washington DC	Georgetown	Princeton University, Princeton, NJ	Princeton
+Georgetown University, Washington DC	Georgetown	University of Minnesota, Minneapolis, MN	Minnesota
+Princeton University, Princeton, NJ	Princeton	Georgetown University, Washington DC	Georgetown
+Princeton University, Princeton, NJ	Princeton	University of Minnesota, Minneapolis, MN	Minnesota
+University of Minnesota, Minneapolis, MN	Minnesota	Georgetown University, Washington DC	Georgetown
+University of Minnesota, Minneapolis, MN	Minnesota	Princeton University, Princeton, NJ	Princeton
+LSE, London	LSE	UCSD, La Jolla	UCSD
+UCSD, La Jolla	UCSD	LSE, London	LSE
+Texas A&M University, College Station	Texas A&M	University of Pennsylvania, Philadelphia	Penn
+Texas A&M University, College Station	Texas A&M	University of Pittsburgh, Pittsburgh	Pittsburgh
+University of Pennsylvania, Philadelphia	Penn	Texas A&M University, College Station	Texas A&M
+University of Pennsylvania, Philadelphia	Penn	University of Pittsburgh, Pittsburgh	Pittsburgh
+University of Pittsburgh, Pittsburgh	Pittsburgh	Texas A&M University, College Station	Texas A&M
+University of Pittsburgh, Pittsburgh	Pittsburgh	University of Pennsylvania, Philadelphia	Penn
+New York University, New York	NYU	University of Sydney, Sydney	Sydney
+University of Sydney, Sydney	Sydney	New York University, New York	NYU
+Division of Social Science, A5-1168A, New York UniversitySaadiyat Island, 129188, Abu Dhabi	NYU Abu Dhabi	Koc University, ?stanbul	Koç
+Koc University, ?stanbul	Koç	Division of Social Science, A5-1168A, New York UniversitySaadiyat Island, 129188, Abu Dhabi	NYU Abu Dhabi
+Central European University, Budapest	CEU	Universite Pantheon Assas (Paris 2), Paris	Paris 2
+Universite Pantheon Assas (Paris 2), Paris	Paris 2	Central European University, Budapest	CEU
+Department of Social and Political Sciences, Bocconi University, Milan	Bocconi	School of International Development, University of East Anglia, Norwich	UEA
+Department of Social and Political Sciences, Bocconi University, Milan	Bocconi	Vienna Institute of Demography/Austrian Academy of Sciences, Wittgenstein Centre for Demography and Global Human Capital, Vienna	VID Vienna
+School of International Development, University of East Anglia, Norwich	UEA	Department of Social and Political Sciences, Bocconi University, Milan	Bocconi
+School of International Development, University of East Anglia, Norwich	UEA	Vienna Institute of Demography/Austrian Academy of Sciences, Wittgenstein Centre for Demography and Global Human Capital, Vienna	VID Vienna
+Vienna Institute of Demography/Austrian Academy of Sciences, Wittgenstein Centre for Demography and Global Human Capital, Vienna	VID Vienna	Department of Social and Political Sciences, Bocconi University, Milan	Bocconi
+Vienna Institute of Demography/Austrian Academy of Sciences, Wittgenstein Centre for Demography and Global Human Capital, Vienna	VID Vienna	School of International Development, University of East Anglia, Norwich	UEA
+University of Amsterdam, AMSTERDAM	Amsterdam	University of Uppsala, Uppsala	Uppsala
+University of Uppsala, Uppsala	Uppsala	University of Amsterdam, AMSTERDAM	Amsterdam
+European University Institute, Florence	EUI	Queen Mary University of London, London	QMUL
+European University Institute, Florence	EUI	University of Oxford, Oxford	Oxford
+Queen Mary University of London, London	QMUL	European University Institute, Florence	EUI
+Queen Mary University of London, London	QMUL	University of Oxford, Oxford	Oxford
+University of Oxford, Oxford	Oxford	European University Institute, Florence	EUI
+University of Oxford, Oxford	Oxford	Queen Mary University of London, London	QMUL
+Chapman University, Orange	Chapman	Simon Fraser University, Burnaby	SFU
+Chapman University, Orange	Chapman	University of Memphis, Tennessee	Memphis
+Simon Fraser University, Burnaby	SFU	Chapman University, Orange	Chapman
+Simon Fraser University, Burnaby	SFU	University of Memphis, Tennessee	Memphis
+University of Memphis, Tennessee	Memphis	Chapman University, Orange	Chapman
+University of Memphis, Tennessee	Memphis	Simon Fraser University, Burnaby	SFU
+Charles University, Institute of Political Studies, Prague	Charles	WZB Berlin Social Science Center, Berlin	WZB
+WZB Berlin Social Science Center, Berlin	WZB	Charles University, Institute of Political Studies, Prague	Charles
+Kyung Hee, Seoul	Kyung Hee	University of Rochester, Rochester	Rochester
+University of Rochester, Rochester	Rochester	Kyung Hee, Seoul	Kyung Hee
+Norwegian Business School, Oslo	NBS Oslo	University of California San Diego, San Diego	UCSD
+Norwegian Business School, Oslo	NBS Oslo	University of Turku, Turku	Turku
+Norwegian Business School, Oslo	NBS Oslo	VATT Institute for Economic Research, Helsinki	VATT Helsinki
+University of California San Diego, San Diego	UCSD	Norwegian Business School, Oslo	NBS Oslo
+University of California San Diego, San Diego	UCSD	University of Turku, Turku	Turku
+University of California San Diego, San Diego	UCSD	VATT Institute for Economic Research, Helsinki	VATT Helsinki
+University of Turku, Turku	Turku	Norwegian Business School, Oslo	NBS Oslo
+University of Turku, Turku	Turku	University of California San Diego, San Diego	UCSD
+University of Turku, Turku	Turku	VATT Institute for Economic Research, Helsinki	VATT Helsinki
+VATT Institute for Economic Research, Helsinki	VATT Helsinki	Norwegian Business School, Oslo	NBS Oslo
+VATT Institute for Economic Research, Helsinki	VATT Helsinki	University of California San Diego, San Diego	UCSD
+VATT Institute for Economic Research, Helsinki	VATT Helsinki	University of Turku, Turku	Turku
+University of Maryland, College Park	Maryland	University of North Carolina at Charlotte, Charlotte	Charlotte
+University of Maryland, College Park	Maryland	Uppsala University, Uppsala	Uppsala
+University of North Carolina at Charlotte, Charlotte	Charlotte	University of Maryland, College Park	Maryland
+University of North Carolina at Charlotte, Charlotte	Charlotte	Uppsala University, Uppsala	Uppsala
+Uppsala University, Uppsala	Uppsala	University of Maryland, College Park	Maryland
+Uppsala University, Uppsala	Uppsala	University of North Carolina at Charlotte, Charlotte	Charlotte
+Hertie School, Berlin's University of Governance, Berlin	Hertie	Università degli Studi di Milano, Milan	Milano
+Hertie School, Berlin's University of Governance, Berlin	Hertie	University College London, London	UCL
+Università degli Studi di Milano, Milan	Milano	Hertie School, Berlin's University of Governance, Berlin	Hertie
+Università degli Studi di Milano, Milan	Milano	University College London, London	UCL
+University College London, London	UCL	Hertie School, Berlin's University of Governance, Berlin	Hertie
+University College London, London	UCL	Università degli Studi di Milano, Milan	Milano
+Bocconi University, Milano	Bocconi	Florida State University, Tallahassee	Florida State
+Bocconi University, Milano	Bocconi	Yale University, New Haven	Yale
+Florida State University, Tallahassee	Florida State	Bocconi University, Milano	Bocconi
+Florida State University, Tallahassee	Florida State	Yale University, New Haven	Yale
+Yale University, New Haven	Yale	Bocconi University, Milano	Bocconi
+Yale University, New Haven	Yale	Florida State University, Tallahassee	Florida State
+University College Dublin, Dublin	Dublin	University of Zurich, Zurich	Zurich
+University of Zurich, Zurich	Zurich	University College Dublin, Dublin	Dublin
+Bocconi University, Milano	Bocconi	ETH, Zurich	ETH
+ETH, Zurich	ETH	Bocconi University, Milano	Bocconi
+Texas A&M University (USA), College Station	Texas A&M	University of Essex, Colchester	Essex
+University of Essex, Colchester	Essex	Texas A&M University (USA), College Station	Texas A&M
+Fukuoka University, Fukuoka	Fukuoka	Harvard University, Cambridge	Harvard
+Fukuoka University, Fukuoka	Fukuoka	Hiroshima University, Hiroshima	Hiroshima
+Harvard University, Cambridge	Harvard	Fukuoka University, Fukuoka	Fukuoka
+Harvard University, Cambridge	Harvard	Hiroshima University, Hiroshima	Hiroshima
+Hiroshima University, Hiroshima	Hiroshima	Fukuoka University, Fukuoka	Fukuoka
+Hiroshima University, Hiroshima	Hiroshima	Harvard University, Cambridge	Harvard
+Trinity College Dublin, Dublin	TCD	Tulane University, New Orleans	Tulane
+Trinity College Dublin, Dublin	TCD	University College Dublin, Dublin	Dublin
+Trinity College Dublin, Dublin	TCD	University of Exeter & Exeter Q-Step Centre, Exeter	Exeter
+Tulane University, New Orleans	Tulane	Trinity College Dublin, Dublin	TCD
+Tulane University, New Orleans	Tulane	University College Dublin, Dublin	Dublin
+Tulane University, New Orleans	Tulane	University of Exeter & Exeter Q-Step Centre, Exeter	Exeter
+University College Dublin, Dublin	Dublin	Trinity College Dublin, Dublin	TCD
+University College Dublin, Dublin	Dublin	Tulane University, New Orleans	Tulane
+University College Dublin, Dublin	Dublin	University of Exeter & Exeter Q-Step Centre, Exeter	Exeter
+University of Exeter & Exeter Q-Step Centre, Exeter	Exeter	Trinity College Dublin, Dublin	TCD
+University of Exeter & Exeter Q-Step Centre, Exeter	Exeter	Tulane University, New Orleans	Tulane
+University of Exeter & Exeter Q-Step Centre, Exeter	Exeter	University College Dublin, Dublin	Dublin
+Humboldt-Universität zu Berlin, Berlin	Humboldt	Pennsylvania State University, University Park	Penn State
+Humboldt-Universität zu Berlin, Berlin	Humboldt	University of Copenhagen, Copenhagen	Copenhagen
+Humboldt-Universität zu Berlin, Berlin	Humboldt	University of Leiden, Leiden	Leiden
+Humboldt-Universität zu Berlin, Berlin	Humboldt	University of Oslo, Oslo	Oslo
+Humboldt-Universität zu Berlin, Berlin	Humboldt	University of Reading, Reading	Reading
+Pennsylvania State University, University Park	Penn State	Humboldt-Universität zu Berlin, Berlin	Humboldt
+Pennsylvania State University, University Park	Penn State	University of Copenhagen, Copenhagen	Copenhagen
+Pennsylvania State University, University Park	Penn State	University of Leiden, Leiden	Leiden
+Pennsylvania State University, University Park	Penn State	University of Oslo, Oslo	Oslo
+Pennsylvania State University, University Park	Penn State	University of Reading, Reading	Reading
+University of Copenhagen, Copenhagen	Copenhagen	Humboldt-Universität zu Berlin, Berlin	Humboldt
+University of Copenhagen, Copenhagen	Copenhagen	Pennsylvania State University, University Park	Penn State
+University of Copenhagen, Copenhagen	Copenhagen	University of Leiden, Leiden	Leiden
+University of Copenhagen, Copenhagen	Copenhagen	University of Oslo, Oslo	Oslo
+University of Copenhagen, Copenhagen	Copenhagen	University of Reading, Reading	Reading
+University of Leiden, Leiden	Leiden	Humboldt-Universität zu Berlin, Berlin	Humboldt
+University of Leiden, Leiden	Leiden	Pennsylvania State University, University Park	Penn State
+University of Leiden, Leiden	Leiden	University of Copenhagen, Copenhagen	Copenhagen
+University of Leiden, Leiden	Leiden	University of Oslo, Oslo	Oslo
+University of Leiden, Leiden	Leiden	University of Reading, Reading	Reading
+University of Oslo, Oslo	Oslo	Humboldt-Universität zu Berlin, Berlin	Humboldt
+University of Oslo, Oslo	Oslo	Pennsylvania State University, University Park	Penn State
+University of Oslo, Oslo	Oslo	University of Copenhagen, Copenhagen	Copenhagen
+University of Oslo, Oslo	Oslo	University of Leiden, Leiden	Leiden
+University of Oslo, Oslo	Oslo	University of Reading, Reading	Reading
+University of Reading, Reading	Reading	Humboldt-Universität zu Berlin, Berlin	Humboldt
+University of Reading, Reading	Reading	Pennsylvania State University, University Park	Penn State
+University of Reading, Reading	Reading	University of Copenhagen, Copenhagen	Copenhagen
+University of Reading, Reading	Reading	University of Leiden, Leiden	Leiden
+University of Reading, Reading	Reading	University of Oslo, Oslo	Oslo
+Ben-Gurion University, Beer Sheva	Ben-Gurion	Leuven University, Leuven	Leuven
+Ben-Gurion University, Beer Sheva	Ben-Gurion	University of Montreal, Montreal	Montreal
+Leuven University, Leuven	Leuven	Ben-Gurion University, Beer Sheva	Ben-Gurion
+Leuven University, Leuven	Leuven	University of Montreal, Montreal	Montreal
+University of Montreal, Montreal	Montreal	Ben-Gurion University, Beer Sheva	Ben-Gurion
+University of Montreal, Montreal	Montreal	Leuven University, Leuven	Leuven
+Rice University, Houston	Rice	Texas A&M University, College Station	Texas A&M
+Texas A&M University, College Station	Texas A&M	Rice University, Houston	Rice
+University of Cyprus, Nicosia	Cyprus	University of Pittsburgh, Pittsburgh	Pittsburgh
+University of Pittsburgh, Pittsburgh	Pittsburgh	University of Cyprus, Nicosia	Cyprus
+ETH Zurich, Zurich	ETH	London School of Economics and Political Science, London	LSE
+London School of Economics and Political Science, London	LSE	ETH Zurich, Zurich	ETH
+European University Institute, Florence	EUI	Mannheim Centre for European Social ResearchUniversity of Mannheim, Mannheim	Mannheim
+Mannheim Centre for European Social ResearchUniversity of Mannheim, Mannheim	Mannheim	European University Institute, Florence	EUI
+Tulane University, New Orleans	Tulane	University of Kentucky, Lexington	Kentucky
+University of Kentucky, Lexington	Kentucky	Tulane University, New Orleans	Tulane
+Hertie School, Berlin	Hertie	University of California, Los Angeles, Los Angeles	UCLA
+University of California, Los Angeles, Los Angeles	UCLA	Hertie School, Berlin	Hertie
+Duke University, Durham	Duke	Nuffield College, University of Oxford, Oxford	Oxford
+Nuffield College, University of Oxford, Oxford	Oxford	Duke University, Durham	Duke
+University of Amsterdam, Amsterdam	Amsterdam	University of Koblenz-Landau, Landau	Koblenz-Landau
+University of Amsterdam, Amsterdam	Amsterdam	University of Lausanne, Lausanne	Lausanne
+University of Koblenz-Landau, Landau	Koblenz-Landau	University of Amsterdam, Amsterdam	Amsterdam
+University of Koblenz-Landau, Landau	Koblenz-Landau	University of Lausanne, Lausanne	Lausanne
+University of Lausanne, Lausanne	Lausanne	University of Amsterdam, Amsterdam	Amsterdam
+University of Lausanne, Lausanne	Lausanne	University of Koblenz-Landau, Landau	Koblenz-Landau
+PRIO, Oslo	PRIO	University of Gothenburg, Gothenburg	Gothenburg
+PRIO, Oslo	PRIO	University of Oslo, Oslo	Oslo
+University of Gothenburg, Gothenburg	Gothenburg	PRIO, Oslo	PRIO
+University of Gothenburg, Gothenburg	Gothenburg	University of Oslo, Oslo	Oslo
+University of Oslo, Oslo	Oslo	PRIO, Oslo	PRIO
+University of Oslo, Oslo	Oslo	University of Gothenburg, Gothenburg	Gothenburg
+Norwegian Institute of International Affairs, OSLO, Norway	NIIA Oslo	SAIS, Johns Hopkins University, Washington DC	SAIS
+Norwegian Institute of International Affairs, OSLO, Norway	NIIA Oslo	University of Oslo, OSLO	Oslo
+SAIS, Johns Hopkins University, Washington DC	SAIS	Norwegian Institute of International Affairs, OSLO, Norway	NIIA Oslo
+SAIS, Johns Hopkins University, Washington DC	SAIS	University of Oslo, OSLO	Oslo
+University of Oslo, OSLO	Oslo	Norwegian Institute of International Affairs, OSLO, Norway	NIIA Oslo
+University of Oslo, OSLO	Oslo	SAIS, Johns Hopkins University, Washington DC	SAIS
