@@ -4,6 +4,6 @@ The conference had to go remote due to the Covid-19 pandemic, so ties might not 
 
 Almost every academic organization represented is an American or West European university.
 
-![](example_graph.png)
+![](example-graph.png)
 
 Thanks to Stefan Müller for the [URLs](https://twitter.com/ste_mueller/status/1272874116333346816) to get all abstracts.
