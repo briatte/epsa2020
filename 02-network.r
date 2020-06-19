@@ -127,7 +127,8 @@ str_fix <- function(x) {
     str_replace("^Fabra$", "UPF") %>%
     str_replace("Norwegian Institute of International Affairs", "NIIA Oslo") %>%
     str_replace("Norwegian Institute for Public Health", "NIPH Oslo") %>%
-    str_replace("Center for Research and Social Progress", "CRSP Ponte dell'Olio")
+    str_replace("Center for Research and Social Progress", "CRSP Ponte dell'Olio") %>%
+    str_replace("^International Institute for Applied Systems Analysis", "IIASA")
 }
 
 # View(tibble(from = u, to = str_fix(str_clean(u))))
@@ -151,6 +152,8 @@ n <- as.matrix(e) %>%
   igraph::graph_from_edgelist(directed = FALSE)
 
 table(degree(n)) # divide by 2 for actual
+sort(degree(n)[ degree(n) > 14 ]) # German x 2, USA, ITA, NOR
+
 V(n)$hi_degree <- dplyr::if_else(degree(n) >= 8, V(n)$name, NA_character_)
 
 ggplot(n, aes(x, y, xend = xend, yend = yend)) +
