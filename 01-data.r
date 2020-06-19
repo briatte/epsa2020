@@ -13,7 +13,8 @@ dir.create("abstract", showWarnings = FALSE)
 #     download.file(i, ., mode = "wb", quiet = TRUE)
 # }
 
-# index pages downloaded manually using:
+# Using index pages downloaded manually.
+# Thanks to Stefan Müller for the URLs:
 # https://twitter.com/ste_mueller/status/1272874116333346816
 for (i in list.files("search-results", pattern = "^jun", full.names = TRUE)) {
 
@@ -22,14 +23,16 @@ for (i in list.files("search-results", pattern = "^jun", full.names = TRUE)) {
     html_attr("href") %>%
     str_subset("abstract_\\d+\\.html")
 
-  cat(length(u), "URLs:")
+  cat(basename(i), ":", length(u), "URLs...")
+
   for (j in u) {
 
     str_replace(basename(j), "_", "/") %>%
       download.file(j, ., mode = "wb", quiet = TRUE)
-    cat(".")
 
   }
   cat("\n")
 
 }
+
+# kthxbye
