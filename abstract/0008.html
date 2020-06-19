@@ -1,96 +1,172 @@
-<!DOCTYPE html> 
-<html>
-	<head>
-		<title>Gender, occupation, and representation: How pink-collar representation shapes policy outcomes</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../../../data/bootstrap-3.3.4-dist/css/bootstrap.min.css" title="boot">
-		<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/coms.css">
-		<meta name="ID" content="227">
-		<meta name="abstracttitle" content="Gender, occupation, and representation: How pink-collar representation shapes policy outcomes">
-		<meta name="presenters" content="Mirya Holman">
-		<meta name="authors" content="Mirya  Holman  (1), Tiffany  Barnes  (2)">
-		<meta name="affiliations" content="1. Tulane University, New Orleans, 2. University of Kentucky, Lexington">
-		<meta name="paper_ref" content="Th-P1-01">
-		<meta name="topic" content="EU Politics">
-		<meta name="pres_type" content="Oral presentation">
-		<meta name="room" content="Zoom">
-		<meta name="time" content="13:00 - 13:15">
-		<meta name="start" content="">
-		<meta name="end" content="">
-		<meta name="date" content="Thursday, 18 June">
-		<meta name="chairs" content="">
-		<meta name="moderators" content="Debra  Leiter">
-		<meta name="full_title" content="Legislative Studies and Party Politics">
-		<meta name="dt_start" content="2020-06-18T13:00">
-		<meta name="dt_end" content="2020-06-18T13:15">
-		<meta name="session_id" content="23">
-		<meta name="session_count" content="9">
-		<meta name="session_start" content="2020-06-18T13:00:00">
-		<meta name="session_end" content="2020-06-18T14:30:00">
-		<meta name="session_full_title" content="Legislative Studies and Party Politics">
-		<meta name="session_short_title" content="Virtual Panel Session 1">
-		<meta name="session_times" content="13:00 - 14:30">
-		<meta name="session_type" content="Panel Session 1">
-		<meta name="lang" content="en">
-	</head>
-	<body style="margin:auto; clear:both; " class="body_css">
-		<div id="pg0">
-			<div id="top_nav_fixed">
-				<a href="https://www.epsanet.org"><img src="https://www.epsanet.org/wp-content/uploads/2015/09/EPSA_Logo_640px.png" alt="European Political Science Association" width="auto" height="auto"></a>
-				<h1>EPSA&nbsp;Virtual<br>18 - 19 June&nbsp;2020</h1>
+<!DOCTYPE html> <html><head><title>Party System Institutionalization and Economic Voting: Evidence from India</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="../../../data/bootstrap-3.3.4-dist/css/bootstrap.min.css" title="boot">
+<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/coms.css">
+<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/mobile.css">
+<script  src="../../../data/auxiliary/jquery-1.11.3.min.js"></script>
+<script  src="../../../data/auxiliary/settings_en.js"></script>
+<script  src="../../../data/auxiliary/coms_str_en.js"></script>
+<script  src="../../../data/auxiliary/zoom_index_en.js"></script>
+<script  src="../../../data/auxiliary/zoom_pageinfo_en.js"></script>
+<script  src="../../../data/docs/search.js"></script>
+<script  src="../../../data/auxiliary/device.js"></script>
+<script  src="../../../data/auxiliary/FileSaver.min.js"></script>
+<script  src="../../../data/jstorage/json2.min.js"></script>
+<script  src="../../../data/jstorage/jstorage.js"></script>
+<script  src="../../../data/auxiliary/coms.js"></script>
+<script  src="../../../data/auxiliary/highlight.js"></script>
+
+
+<!--link-to-iframe-resizer-cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.4/iframeResizer.contentWindow.min.js"></script>
+
+<script>
+jQuery(document).ready(function(jQuery) {
+
+    var query_string = get_filter();
+    //alert (query_string);
+    if (query_string) {
+        jQuery('#goback_rslt').attr("href",  "../../../en" + '/srch.html' + query_string); + '#rslt');
+        jQuery('#goback_srch').attr("href",  "../../../en" + '/srch.html' + query_string); + '#srch');
+    }
+
+    var is_mobile = mobilecheck();
+    //alert(is_mobile);
+    if (is_mobile) {
+      var cssLink = jQuery("<link rel='stylesheet' type='text/css' href='../../../data/auxiliary/mobile.css'>");
+      jQuery("head").append(cssLink);
+    }
+
+    //disable link to COMs on mobile
+    jQuery(".foot").find("a").click(function( event ) {
+      event.preventDefault();
+    });
+
+    
+    var stored_items = jQuery.jStorage.index();
+    if (jQuery.inArray('abstract_0008', stored_items)>=0) {jQuery('#abstract_0008').prop('checked', true);} else {jQuery('#abstract_0008').prop('checked', false);}
+    
+})
+</script>
+
+ <meta name="ID" content="360">
+<meta name="abstracttitle" content="Party System Institutionalization and Economic Voting: Evidence from India">
+<meta name="presenters" content="Pavithra Suryanarayan">
+<meta name="authors" content="Francesca  Jensenius  (1), Pavithra  Suryanarayan  (3)">
+<meta name="affiliations" content="1. University of Oslo, OSLO, 2. Norwegian Institute of International Affairs, OSLO, Norway, 3. SAIS, Johns Hopkins University, Washington DC">
+<meta name="paper_ref" content="Th-P1-01">
+<meta name="topic" content="EU Politics">
+<meta name="pres_type" content="Oral presentation">
+<meta name="room" content="Zoom">
+<meta name="time" content="13:00 - 13:15">
+<meta name="start" content="">
+<meta name="end" content="">
+<meta name="date" content="Thursday, 18 June">
+<meta name="chairs" content="">
+<meta name="moderators" content="Andreas  Murr">
+<meta name="full_title" content="Elections, Public Opinion, and Voting Behaviour">
+<meta name="dt_start" content="2020-06-18T13:00">
+<meta name="dt_end" content="2020-06-18T13:15">
+<meta name="session_id" content="20">
+<meta name="session_count" content="9">
+<meta name="session_start" content="2020-06-18T13:00:00">
+<meta name="session_end" content="2020-06-18T14:30:00">
+<meta name="session_full_title" content="Elections, Public Opinion, and Voting Behaviour">
+<meta name="session_short_title" content="Virtual Panel Session 1">
+<meta name="session_times" content="13:00 - 14:30">
+<meta name="session_type" content="Panel Session 1">
+<meta name="lang" content="en">
+</head><body style="margin:auto; clear:both; " class="body_css" onload="highlight();"> <div id="pg0">
+    <div id="top_nav_fixed">
+      <div id="navitems">
+
+        <div class="navitem"><a href="../../../en/day_1.html">
+            <span class="nav_logo">EPSA Virtual 2020 (London UK times - UTC +01:00)</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/day_1.html">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" title="Browse" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Browse</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/srch.html" id="goback_srch">
+            <span class="glyphicon glyphicon-search" aria-hidden="true" id="glyphicon-search" data-toggle="tooltip" title="Search" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Search</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/cal.html">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true" data-toggle="tooltip" title="Calendar" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Calendar</span>
+        </a></div>
+
+        
+
+
+      </div>
+    </div>
+
+
+
+   <div id="content0"><div id="content1"><div id="content2"> <ul class="nav nav-pills  nav-justified"><li class="pill active"><a href="../../../en/day_1.html" class="day_tab " style="white-space:nowrap;">Thu, 18 Jun</a></li> <li  pill><a href="../../../en/day_2.html" class="day_tab  last_tab" style="white-space:nowrap;">Fri, 19 Jun</a></li></ul>  
+		<div class="session_header0">
+			<div class="row">
+					<div class="col-sm-2 session_times"><div class="txt_right">13:00 - 14:30</div></div>
+					<div class="col-sm-10 session_desc div_border_left" >
+      <div class="">
+          <div class=""><a href="../../../data/sessions/en/session_20.html">P1: Elections, Public Opinion, and Voting Behaviour</a></div>
+      </div>
+			<div class="sessiontype">Panel Session 1</div>
+      
+			<div class="">
+					<div class="" >Room: Zoom</div>
 			</div>
-			<div id="content0">
-				<div id="content1">
-					<div id="content2">
-						<h2 class="programme">Programme | <a href="https://www.epsanet.org/programme/search/"><span class="glyphicon glyphicon-search" aria-hidden="true" id="glyphicon-search" data-toggle="tooltip" title="Search Programme"></span>&nbsp;<span style="font-size: .75em;">search</span></a></h2>
-						<ul class="nav nav-pills  nav-justified">
-							<li class="pill active"><a href="../../../day-1/" class="day_tab " style="white-space:nowrap;">Thu, 18 Jun</a></li>
-							<li  pill><a href="../../../day-2/" class="day_tab  last_tab" style="white-space:nowrap;">Fri, 19 Jun</a></li>
-						</ul>
-						<div class="session_header4">
-							<h4 style="margin: 0; text-align: center; color: brown;"><span style="text-decoration: underline;">Important</span>: these are London UK times - UTC&nbsp;+01:00.</h4>
-						</div>
-						<div class="session_header0">
-							<div class="row">
-								<div class="col-sm-2 session_times">
-									<div class="txt_right">13:00 - 14:30</div>
-								</div>
-								<div class="col-sm-10 session_desc div_border_left" >
-									<div class="">
-										<div class=""><a href="../../../data/sessions/en/session_23.html">P1: Legislative Studies and Party Politics</a></div>
-									</div>
-									<div class="sessiontype">Panel Session 1</div>
-									<div class="">
-										<div class="" >Room: Zoom</div>
-									</div>
-									<div class=" ">
-										<div class="" >
-											<div style="display:inline-block;">Moderator/s: </div>
-											<div style="display:inline-block;"> Debra  Leiter</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="pg">
-							<div id="content">
-								<div class="abstract">
-									<div class="abstracttitle">Gender, occupation, and representation: How pink-collar representation shapes policy outcomes</div>
-									<div class="authors-affiliations">
-										<div class="authors"><u>Mirya  Holman</u> <sup>1</sup>, Tiffany  Barnes <sup>2</sup></div>
-										<div class="affiliations"><sup>1</sup> Tulane University, New Orleans<br><sup>2</sup> University of Kentucky, Lexington</div>
-									</div>
-									<div class="abstracttext">
-										<p>Legislatures worldwide are dominated by wealthy elites, who are often out of touch with the needs and problems of ordinary citizens. Research shows that the underrepresentation of the working class matters in terms of policy processes and outcomes. Yet, the research on class has largely focused on blue-collar representatives, who are primarily men. Working-class women are more likely to hold pink-collar jobs, or low-status occupations dominated by women. We argue that pink-collar legislators are uniquely positioned to legislate over redistributional policy. To test our argument, we combine a new coding of working-class backgrounds that accounts for pink-collar representation with bill introductions and state spending data on education and social services from U.S. states over time. Modeling compositional budget data, we find that class and gender intersect to shape policy outcomes via state budget allocations, with women’s pink-collar representation associated with increased spending on both education and social services.</p>
-                  </div>
-                  <h4>Presentation time: 13:00 - 13:15</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+
+      
+			
+			
+			
+				<div class=" ">
+        <div class="" >
+						<div style="display:inline-block;">Moderator/s: </div>
+						<div style="display:inline-block;"> Andreas  Murr</div>
+        </div>
 				</div>
+			
+			
+			
+			
+				<div class=" ">
+        <div class="" >
+						<div class="txt1" style="margin-top:16px; font-size:0.9em; font-style:italic;">Copy this link into your web browser and enter the Zoom meeting - https://us02web.zoom.us/j/82517552884?pwd=Vy9OeVdjbklMcDNCanYrS2J2aEpFQT09</div>
+        </div>
+				</div>
+			
+		</div>
 			</div>
 		</div>
-	</body>
-</html>
+		 <div class="back_link"><a href="javascript:history.back()">Back</a></div> <div id="pg">
+<div id="content">
+<div class="abstract">
+<div class="abstracttitle">Party System Institutionalization and Economic Voting: Evidence from India</div>
+<div class="authors-affiliations">
+    <div class="authors">Francesca  Jensenius <sup>1</sup>, <u>Pavithra  Suryanarayan</u> <sup>3</sup></div>
+    <div class="affiliations"><sup>1</sup> University of Oslo, OSLO<br><sup>2</sup> Norwegian Institute of International Affairs, OSLO, Norway<br><sup>3</sup> SAIS, Johns Hopkins University, Washington DC</div>
+</div>
+<div class="abstracttext"><p> </p>  <p>It is well established that countries' institutional features can weaken economic voting by diffusing responsibility for policy outcomes. We argue that local-level party system institutionalization similarly mediates the link between the economy and vote choice. We focus on one dimension of party system institutionalization: the strength of party-candidate linkages in elections, measured by manually tracing the rerunning patterns of some 80,000 candidates in Indian state elections 1986-2007. Using rerunning patterns to measure party-candidate linkages and rainfall data to measure the state of the economy, we show that voters are more likely to reward incumbent parties for economic performance when parties and candidates are aligned in consecutive elections. We address concerns of endogeneity in rerunning patterns by showing that the results are robust to alternate measures of local-level party system institutionalization. They are also robust to alternative measures of the state of the economy, and using individual-level survey data. </p></div>
+
+
+
+<div class="presentation_details">
+        <hr class="horiz_separator">
+        <div class="presentation_summary"><div class="session"><div class="summary_label">Reference:</div> <div class="summary_value">Th-P1-01</div></div><div class="session"><div class="summary_label">Session:</div> <div class="summary_value">Elections, Public Opinion, and Voting Behaviour</div></div><div class="session"><div class="summary_label">Presenter/s:</div> <div class="summary_value">Pavithra Suryanarayan</div></div><div class="session"><div class="summary_label">Topic:</div> <div class="summary_value">EU Politics</div></div><div class="session"><div class="summary_label">Presentation type:</div> <div class="summary_value">Oral presentation</div></div><div class="session"><div class="summary_label">Room:</div> <div class="summary_value">Zoom</div></div><div class="session"><div class="summary_label">Moderator/s:</div> <div class="summary_value">Andreas  Murr</div></div><div class="session"><div class="summary_label">Date:</div> <div class="summary_value">Thursday, 18 June</div></div><div class="session"><div class="summary_label">Time:</div> <div class="summary_value">13:00 - 13:15</div></div><div class="session"><div class="summary_label">Session times:</div> <div class="summary_value">13:00 - 14:30</div></div></div>
+        <hr class="horiz_separator">
+        </div>
+</div>
+</div>
+</div> 
+      <div class="save-to-cal-checkbox">
+      <label for="abstract_0008"  class="checkbox-inline">
+        <div class="cb"><input type="checkbox" id="abstract_0008" name="abstract_0008" value="abstract_0008"  onclick="bkm('pres', 'abstract_0008', 'abstract_0008', 7)"></div>
+        <div class="cb-label">Save to the calendar</div></label>
+        <input type="hidden" name="cal_id"              id="cal_id"              value="360"><input type="hidden" name="type"                id="type"                value="abstract"><input type="hidden" name="meta_title"          id="meta_title"          value="Elections, Public Opinion, and Voting Behaviour [Session]"><input type="hidden" name="lang"                id="lang"                value="en"><input type="hidden" name="session_code"        id="session_code"        value="P1"><input type="hidden" name="session_count"       id="session_count"       value="9"><input type="hidden" name="session_short_title" id="session_short_title" value=""><input type="hidden" name="session_full_title"  id="session_full_title"  value=""><input type="hidden" name="session_type"        id="session_type"        value="305113"><input type="hidden" name="session_start"       id="session_start"       value=""><input type="hidden" name="session_end"         id="session_end"         value=""><input type="hidden" name="abstracttitle"       id="abstracttitle"       value="Party System Institutionalization and Economic Voting: Evidence from India"><input type="hidden" name="presenters"          id="presenters"          value="  , Pavithra  Suryanarayan (SAIS, Johns Hopkins University, Washington DC)"><input type="hidden" name="session_id"          id="session_id"          value="20"><input type="hidden" name="dt_start"            id="dt_start"            value="2020-06-18T13:00"><input type="hidden" name="dt_end"              id="dt_end"              value="2020-06-18T13:15"><input type="hidden" name="room"                id="room"                value="Zoom"><input type="hidden" name="date"                id="date"                value="Thursday, 18 June"><input type="hidden" name="pres_type"           id="pres_type"           value="Oral presentation"><input type="hidden" name="topic"               id="topic"               value="EU Politics"><input type="hidden" name="paper_ref"           id="paper_ref"           value="Th-P1-01"><input type="hidden" name="time"                id="time"                value="">
+      </div>
+      <div id="bottom"></div>  <div class="back_link"><a href="javascript:history.back()">Back</a></div> </div></div></div></div>  </body></html>

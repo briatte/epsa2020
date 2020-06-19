@@ -1,96 +1,172 @@
-<!DOCTYPE html> 
-<html>
-	<head>
-		<title>Political consequences of regional economic divergence in the UK</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../../../data/bootstrap-3.3.4-dist/css/bootstrap.min.css" title="boot">
-		<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/coms.css">
-		<meta name="ID" content="1567">
-		<meta name="abstracttitle" content="Political consequences of regional economic divergence in the UK">
-		<meta name="presenters" content="Stephen Fisher">
-		<meta name="authors" content="Stephen  Fisher">
-		<meta name="affiliations" content="University of Oxford, Oxford">
-		<meta name="paper_ref" content="Th-P2-04">
-		<meta name="topic" content="EU Politics">
-		<meta name="pres_type" content="Oral presentation">
-		<meta name="room" content="Zoom">
-		<meta name="time" content="16:45 - 17:00">
-		<meta name="start" content="">
-		<meta name="end" content="">
-		<meta name="date" content="Thursday, 18 June">
-		<meta name="chairs" content="">
-		<meta name="moderators" content="Andreas  Murr">
-		<meta name="full_title" content="Elections, Public Opinion, and Voting Behaviour">
-		<meta name="dt_start" content="2020-06-18T16:45">
-		<meta name="dt_end" content="2020-06-18T17:00">
-		<meta name="session_id" content="29">
-		<meta name="session_count" content="14">
-		<meta name="session_start" content="2020-06-18T16:00:00">
-		<meta name="session_end" content="2020-06-18T17:30:00">
-		<meta name="session_full_title" content="Elections, Public Opinion, and Voting Behaviour">
-		<meta name="session_short_title" content="Virtual Panel Session 2">
-		<meta name="session_times" content="16:00 - 17:30">
-		<meta name="session_type" content="Panel Session 2">
-		<meta name="lang" content="en">
-	</head>
-	<body style="margin:auto; clear:both; " class="body_css">
-		<div id="pg0">
-			<div id="top_nav_fixed">
-				<a href="https://www.epsanet.org"><img src="https://www.epsanet.org/wp-content/uploads/2015/09/EPSA_Logo_640px.png" alt="European Political Science Association" width="auto" height="auto"></a>
-				<h1>EPSA&nbsp;Virtual<br>18 - 19 June&nbsp;2020</h1>
+<!DOCTYPE html> <html><head><title>Sharing is Believing? Exploring Misinformation Diffusion and Detection</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="../../../data/bootstrap-3.3.4-dist/css/bootstrap.min.css" title="boot">
+<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/coms.css">
+<link rel="stylesheet" type="text/css" href="../../../data/auxiliary/mobile.css">
+<script  src="../../../data/auxiliary/jquery-1.11.3.min.js"></script>
+<script  src="../../../data/auxiliary/settings_en.js"></script>
+<script  src="../../../data/auxiliary/coms_str_en.js"></script>
+<script  src="../../../data/auxiliary/zoom_index_en.js"></script>
+<script  src="../../../data/auxiliary/zoom_pageinfo_en.js"></script>
+<script  src="../../../data/docs/search.js"></script>
+<script  src="../../../data/auxiliary/device.js"></script>
+<script  src="../../../data/auxiliary/FileSaver.min.js"></script>
+<script  src="../../../data/jstorage/json2.min.js"></script>
+<script  src="../../../data/jstorage/jstorage.js"></script>
+<script  src="../../../data/auxiliary/coms.js"></script>
+<script  src="../../../data/auxiliary/highlight.js"></script>
+
+
+<!--link-to-iframe-resizer-cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.4/iframeResizer.contentWindow.min.js"></script>
+
+<script>
+jQuery(document).ready(function(jQuery) {
+
+    var query_string = get_filter();
+    //alert (query_string);
+    if (query_string) {
+        jQuery('#goback_rslt').attr("href",  "../../../en" + '/srch.html' + query_string); + '#rslt');
+        jQuery('#goback_srch').attr("href",  "../../../en" + '/srch.html' + query_string); + '#srch');
+    }
+
+    var is_mobile = mobilecheck();
+    //alert(is_mobile);
+    if (is_mobile) {
+      var cssLink = jQuery("<link rel='stylesheet' type='text/css' href='../../../data/auxiliary/mobile.css'>");
+      jQuery("head").append(cssLink);
+    }
+
+    //disable link to COMs on mobile
+    jQuery(".foot").find("a").click(function( event ) {
+      event.preventDefault();
+    });
+
+    
+    var stored_items = jQuery.jStorage.index();
+    if (jQuery.inArray('abstract_0060', stored_items)>=0) {jQuery('#abstract_0060').prop('checked', true);} else {jQuery('#abstract_0060').prop('checked', false);}
+    
+})
+</script>
+
+ <meta name="ID" content="1421">
+<meta name="abstracttitle" content="Sharing is Believing? Exploring Misinformation Diffusion and Detection">
+<meta name="presenters" content="Mark Shephard">
+<meta name="authors" content="Mark  Shephard, Narisong  Huhe">
+<meta name="affiliations" content="University of Strathclyde, Glasgow">
+<meta name="paper_ref" content="Th-P2-03">
+<meta name="topic" content="EU Politics">
+<meta name="pres_type" content="Oral presentation">
+<meta name="room" content="Zoom">
+<meta name="time" content="16:30 - 16:45">
+<meta name="start" content="">
+<meta name="end" content="">
+<meta name="date" content="Thursday, 18 June">
+<meta name="chairs" content="">
+<meta name="moderators" content="Annika  Fredén">
+<meta name="full_title" content="Political Communications">
+<meta name="dt_start" content="2020-06-18T16:30">
+<meta name="dt_end" content="2020-06-18T16:45">
+<meta name="session_id" content="28">
+<meta name="session_count" content="12">
+<meta name="session_start" content="2020-06-18T16:00:00">
+<meta name="session_end" content="2020-06-18T17:30:00">
+<meta name="session_full_title" content="Political Communications">
+<meta name="session_short_title" content="Virtual Panel Session 2">
+<meta name="session_times" content="16:00 - 17:30">
+<meta name="session_type" content="Panel Session 2">
+<meta name="lang" content="en">
+</head><body style="margin:auto; clear:both; " class="body_css" onload="highlight();"> <div id="pg0">
+    <div id="top_nav_fixed">
+      <div id="navitems">
+
+        <div class="navitem"><a href="../../../en/day_1.html">
+            <span class="nav_logo">EPSA Virtual 2020 (London UK times - UTC +01:00)</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/day_1.html">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" title="Browse" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Browse</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/srch.html" id="goback_srch">
+            <span class="glyphicon glyphicon-search" aria-hidden="true" id="glyphicon-search" data-toggle="tooltip" title="Search" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Search</span>
+        </a></div>
+
+        <div class="navitem"><a href="../../../en/cal.html">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true" data-toggle="tooltip" title="Calendar" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Calendar</span>
+        </a></div>
+
+        
+
+
+      </div>
+    </div>
+
+
+
+   <div id="content0"><div id="content1"><div id="content2"> <ul class="nav nav-pills  nav-justified"><li class="pill active"><a href="../../../en/day_1.html" class="day_tab " style="white-space:nowrap;">Thu, 18 Jun</a></li> <li  pill><a href="../../../en/day_2.html" class="day_tab  last_tab" style="white-space:nowrap;">Fri, 19 Jun</a></li></ul>  
+		<div class="session_header0">
+			<div class="row">
+					<div class="col-sm-2 session_times"><div class="txt_right">16:00 - 17:30</div></div>
+					<div class="col-sm-10 session_desc div_border_left" >
+      <div class="">
+          <div class=""><a href="../../../data/sessions/en/session_28.html">P2: Political Communications</a></div>
+      </div>
+			<div class="sessiontype">Panel Session 2</div>
+      
+			<div class="">
+					<div class="" >Room: Zoom</div>
 			</div>
-			<div id="content0">
-				<div id="content1">
-					<div id="content2">
-						<h2 class="programme">Programme | <a href="https://www.epsanet.org/programme/search/"><span class="glyphicon glyphicon-search" aria-hidden="true" id="glyphicon-search" data-toggle="tooltip" title="Search Programme"></span>&nbsp;<span style="font-size: .75em;">search</span></a></h2>
-						<ul class="nav nav-pills  nav-justified">
-							<li class="pill active"><a href="../../../day-1/" class="day_tab " style="white-space:nowrap;">Thu, 18 Jun</a></li>
-							<li  pill><a href="../../../day-2/" class="day_tab  last_tab" style="white-space:nowrap;">Fri, 19 Jun</a></li>
-						</ul>
-						<div class="session_header4">
-							<h4 style="margin: 0; text-align: center; color: brown;"><span style="text-decoration: underline;">Important</span>: these are London UK times - UTC&nbsp;+01:00.</h4>
-						</div>
-						<div class="session_header0">
-							<div class="row">
-								<div class="col-sm-2 session_times">
-									<div class="txt_right">16:00 - 17:30</div>
-								</div>
-								<div class="col-sm-10 session_desc div_border_left" >
-									<div class="">
-										<div class=""><a href="../../../data/sessions/en/session_29.html">P2: Elections, Public Opinion, and Voting Behaviour</a></div>
-									</div>
-									<div class="sessiontype">Panel Session 2</div>
-									<div class="">
-										<div class="" >Room: Zoom</div>
-									</div>
-									<div class=" ">
-										<div class="" >
-											<div style="display:inline-block;">Moderator/s: </div>
-											<div style="display:inline-block;"> Andreas  Murr</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="pg">
-							<div id="content">
-								<div class="abstract">
-									<div class="abstracttitle">Political consequences of regional economic divergence in the UK</div>
-									<div class="authors-affiliations">
-										<div class="authors"><u>Stephen  Fisher</u></div>
-										<div class="affiliations">University of Oxford, Oxford</div>
-									</div>
-									<div class="abstracttext">
-										<p>One of the most important post-war economic developments in Britain has been a widening of regional disparities, initially between North and South, and then between London and the rest of Britain. By the 1980s the North-South economic divide was coupled with a political divide between a poorer Labour voting North and a more prosperous Conservative voting South. By 2019 the richest region, London, was the most Labour voting. This paper develops various theories that may help explain these developments, especially regarding the social consequences of economic divergence for inter-regional migration and intra-regional inequality. Hypotheses are tested using a mixture of macro-regional and micro-individual level survey data over time. The analysis and results will be important for understanding how economic geography may affect political developments in other high-income democracies.</p>
-                  </div>
-                  <h4>Presentation time: 16:45 - 17:00</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+
+      
+			
+			
+			
+				<div class=" ">
+        <div class="" >
+						<div style="display:inline-block;">Moderator/s: </div>
+						<div style="display:inline-block;"> Annika  Fredén</div>
+        </div>
 				</div>
+			
+			
+			
+			
+				<div class=" ">
+        <div class="" >
+						<div class="txt1" style="margin-top:16px; font-size:0.9em; font-style:italic;">Copy this link into your web browser and enter the Zoom meeting - https://us02web.zoom.us/j/88033007942?pwd=b0ZPdzFVekhYUkd4TWdEd0E5bVUwdz09</div>
+        </div>
+				</div>
+			
+		</div>
 			</div>
 		</div>
-	</body>
-</html>
+		 <div class="back_link"><a href="javascript:history.back()">Back</a></div> <div id="pg">
+<div id="content">
+<div class="abstract">
+<div class="abstracttitle">Sharing is Believing? Exploring Misinformation Diffusion and Detection</div>
+<div class="authors-affiliations">
+    <div class="authors"><u>Mark  Shephard</u>, Narisong  Huhe</div>
+    <div class="affiliations">University of Strathclyde, Glasgow</div>
+</div>
+<div class="abstracttext"><p>Despite a burgeoning literature on people’s acceptance of fake news, we find few studies have been devoted to exploring why and how people share news, particularly fake news (cf. Halpern et al., 2019). Using social network analysis across 4 social media forums (Twitter, Facebook, Instagrama and Whatsapp, we find that people tend to filter out real news and share fake news. Our two-step experiment suggests that people do not invoke their analytical capabilities when sharing news. Instead, partisan affinity as well as their social networking (discussion of politics, and internet usage) strongly predicts news items they share. However, when asked to assess news, analytical thinking matters and there are no significant differences between people from different parties. Since people normally do not have the time to cross-check and analyze the validity of the news items they encounter, they tend to make a lot of mistakes when it comes to sharing fact-checked items. Indeed, fake news infects networks more so than true news, and most worryingly of all, everybody shares fake news.</p></div>
+
+
+
+<div class="presentation_details">
+        <hr class="horiz_separator">
+        <div class="presentation_summary"><div class="session"><div class="summary_label">Reference:</div> <div class="summary_value">Th-P2-03</div></div><div class="session"><div class="summary_label">Session:</div> <div class="summary_value">Political Communications</div></div><div class="session"><div class="summary_label">Presenter/s:</div> <div class="summary_value">Mark Shephard</div></div><div class="session"><div class="summary_label">Topic:</div> <div class="summary_value">EU Politics</div></div><div class="session"><div class="summary_label">Presentation type:</div> <div class="summary_value">Oral presentation</div></div><div class="session"><div class="summary_label">Room:</div> <div class="summary_value">Zoom</div></div><div class="session"><div class="summary_label">Moderator/s:</div> <div class="summary_value">Annika  Fredén</div></div><div class="session"><div class="summary_label">Date:</div> <div class="summary_value">Thursday, 18 June</div></div><div class="session"><div class="summary_label">Time:</div> <div class="summary_value">16:30 - 16:45</div></div><div class="session"><div class="summary_label">Session times:</div> <div class="summary_value">16:00 - 17:30</div></div></div>
+        <hr class="horiz_separator">
+        </div>
+</div>
+</div>
+</div> 
+      <div class="save-to-cal-checkbox">
+      <label for="abstract_0060"  class="checkbox-inline">
+        <div class="cb"><input type="checkbox" id="abstract_0060" name="abstract_0060" value="abstract_0060"  onclick="bkm('pres', 'abstract_0060', 'abstract_0060', 59)"></div>
+        <div class="cb-label">Save to the calendar</div></label>
+        <input type="hidden" name="cal_id"              id="cal_id"              value="1421"><input type="hidden" name="type"                id="type"                value="abstract"><input type="hidden" name="meta_title"          id="meta_title"          value="Political Communications [Session]"><input type="hidden" name="lang"                id="lang"                value="en"><input type="hidden" name="session_code"        id="session_code"        value="P2"><input type="hidden" name="session_count"       id="session_count"       value="12"><input type="hidden" name="session_short_title" id="session_short_title" value=""><input type="hidden" name="session_full_title"  id="session_full_title"  value=""><input type="hidden" name="session_type"        id="session_type"        value="305751"><input type="hidden" name="session_start"       id="session_start"       value=""><input type="hidden" name="session_end"         id="session_end"         value=""><input type="hidden" name="abstracttitle"       id="abstracttitle"       value="Sharing is Believing? Exploring Misinformation Diffusion and Detection"><input type="hidden" name="presenters"          id="presenters"          value="Mark  Shephard (University of Strathclyde, Glasgow),   "><input type="hidden" name="session_id"          id="session_id"          value="28"><input type="hidden" name="dt_start"            id="dt_start"            value="2020-06-18T16:30"><input type="hidden" name="dt_end"              id="dt_end"              value="2020-06-18T16:45"><input type="hidden" name="room"                id="room"                value="Zoom"><input type="hidden" name="date"                id="date"                value="Thursday, 18 June"><input type="hidden" name="pres_type"           id="pres_type"           value="Oral presentation"><input type="hidden" name="topic"               id="topic"               value="EU Politics"><input type="hidden" name="paper_ref"           id="paper_ref"           value="Th-P2-03"><input type="hidden" name="time"                id="time"                value="">
+      </div>
+      <div id="bottom"></div>  <div class="back_link"><a href="javascript:history.back()">Back</a></div> </div></div></div></div>  </body></html>

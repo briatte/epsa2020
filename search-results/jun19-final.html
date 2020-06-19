@@ -1,33 +1,91 @@
 <!DOCTYPE html>
-<!-- saved from url=(0121)https://www.epsanet.org/programme/search/?zoom_query=&zoom_and=0&presenters=&pres_type=-1&room=-1&date=1&zoom_sort=0#rslt -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>EPSA Virtual 2020, 18-19 Jun | Search</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="./jun19_files/bootstrap.min.css" title="boot">
-		<link rel="stylesheet" type="text/css" href="./jun19_files/coms.css">
-		<script src="./jun19_files/jquery-1.11.3.min.js"></script>
-		<script src="./jun19_files/settings_en.js"></script>
-		<script src="./jun19_files/coms_str_en.js"></script>
-		<script src="./jun19_files/zoom_index_en.js"></script>
-		<script src="./jun19_files/zoom_pageinfo_en.js"></script>
-		<script src="./jun19_files/search.js"></script>
-		<script src="./jun19_files/jstorage.js"></script>
-		<script src="./jun19_files/coms.js"></script>
-	</head>
-	<body style="margin:auto; clear:both;" class="body_css">
-		<div id="top_nav_fixed">
-			<a href="https://www.epsanet.org/"><img src="./jun19_files/EPSA_Logo_640px.png" alt="European Political Science Association" width="auto" height="auto"></a>
-			<h1>EPSA&nbsp;Virtual<br>18 - 19 June&nbsp;2020</h1>
-		</div>
-		<div class="" id="pg0">
-		<!--<div id="srch"></div>-->
-		<div id="content0">
-			<div id="content1">
-        <p><a href="https://www.epsanet.org/programme/">&lt;&lt;&nbsp;&nbsp;back to PROGRAMME</a></p>
-        <div id="top">
-					<div class="result_section">
-						<script>ZoomSearch();</script><form id="srch_frm" method="get" action="https://www.epsanet.org/programme/search/#rslt" class="zoom_searchform">
+<!-- saved from url=(0122)https://coms.events/EPSA-2020/en/srch.html?zoom_query=&zoom_and=0&presenters=&pres_type=-1&room=-1&date=1&zoom_sort=0#rslt -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>EPSA Virtual 2020 (London UK times - UTC +01:00)</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./jun19-final_files/bootstrap.min.css" title="boot">
+<link rel="stylesheet" type="text/css" href="./jun19-final_files/coms.css">
+<link rel="stylesheet" type="text/css" href="./jun19-final_files/mobile.css">
+<script src="./jun19-final_files/jquery-1.11.3.min.js"></script>
+<script src="./jun19-final_files/settings_en.js"></script>
+<script src="./jun19-final_files/coms_str_en.js"></script>
+<script src="./jun19-final_files/zoom_index_en.js"></script>
+<script src="./jun19-final_files/zoom_pageinfo_en.js"></script>
+<script src="./jun19-final_files/search.js"></script>
+<script src="./jun19-final_files/device.js"></script>
+<script src="./jun19-final_files/FileSaver.min.js"></script>
+<script src="./jun19-final_files/json2.min.js"></script>
+<script src="./jun19-final_files/jstorage.js"></script>
+<script src="./jun19-final_files/coms.js"></script>
+<script src="./jun19-final_files/highlight.js"></script>
+
+
+<!--link-to-iframe-resizer-cdn-->
+<script src="./jun19-final_files/iframeResizer.contentWindow.min.js"></script>
+
+<script>
+jQuery(document).ready(function(jQuery) {
+
+    var query_string = get_filter();
+    //alert (query_string);
+    if (query_string) {
+        jQuery('#goback_rslt').attr("href",  "../en" + '/srch.html' + query_string); + '#rslt');
+        jQuery('#goback_srch').attr("href",  "../en" + '/srch.html' + query_string); + '#srch');
+    }
+
+    var is_mobile = mobilecheck();
+    //alert(is_mobile);
+    if (is_mobile) {
+      var cssLink = jQuery("<link rel='stylesheet' type='text/css' href='../data/auxiliary/mobile.css'>");
+      jQuery("head").append(cssLink);
+    }
+
+    //disable link to COMs on mobile
+    jQuery(".foot").find("a").click(function( event ) {
+      event.preventDefault();
+    });
+
+    
+})
+</script>
+
+</head>
+<body style="margin:auto; clear:both;" class="body_css">
+    <div id="top_nav_fixed">
+      <div id="navitems">
+
+        <div class="navitem"><a href="https://coms.events/EPSA-2020/en/day_1.html">
+            <span class="nav_logo">EPSA Virtual 2020 (London UK times - UTC +01:00)</span>
+        </a></div>
+
+        <div class="navitem"><a href="https://coms.events/EPSA-2020/en/day_1.html">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" title="Browse" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Browse</span>
+        </a></div>
+
+        <div class="navitem"><a href="https://coms.events/EPSA-2020/en/srch.html" id="goback_srch">
+            <span class="glyphicon glyphicon-search" aria-hidden="true" id="glyphicon-search" data-toggle="tooltip" title="Search" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Search</span>
+        </a></div>
+
+        <div class="navitem"><a href="https://coms.events/EPSA-2020/en/cal.html">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true" data-toggle="tooltip" title="Calendar" style="font-size:1.4em;"></span> <span class="nav-txt hidden-xs">Calendar</span>
+        </a></div>
+
+        
+
+
+      </div>
+    </div>
+
+
+
+  <div class="" id="pg0"><!--<div id="srch"></div>--><div id="content0"><div id="content1">
+<div id="top">
+
+
+
+<div class="result_section">
+<script>ZoomSearch();</script><form id="srch_frm" method="get" action="https://coms.events/EPSA-2020/en/srch.html#rslt" class="zoom_searchform">
 <h1 class="filter_hdr">Search</h1>
 <div class="row search_field"><div class="col-md-2">Full text search:</div><div class="col-md-10"> <input type="text" name="zoom_query" size="20" value="" id="zoom_searchbox" class="form-control input-sm zoom_searchbox"><br>
 
@@ -39,7 +97,7 @@
 <div class="container_fluid zoom_metaform">
 <div class="row search_field"><div class="col-md-2">Presenter/s:</div><div class="col-md-10"> <input type="text" name="presenters" size="20" value="" class="form-control input-sm  zoom_metaform_text"></div></div>
 
-<div class="row search_field"><div class="col-md-2">Presentation type:</div><div class="col-md-10" data-children-count="1"> <select name="pres_type" class="form-control input-sm zoom_metaform_dropdown">
+<div class="row search_field"><div class="col-md-2">Presentation type:</div><div class="col-md-10"> <select name="pres_type" class="form-control input-sm zoom_metaform_dropdown">
 
 <option value="-1"></option>
 <option value="0">Oral presentation</option>
@@ -48,20 +106,20 @@
 
 </select></div></div>
 
-<div class="row search_field"><div class="col-md-2">Room:</div><div class="col-md-10" data-children-count="1"> <select name="room" class="form-control input-sm zoom_metaform_dropdown">
+<div class="row search_field"><div class="col-md-2">Room:</div><div class="col-md-10"> <select name="room" class="form-control input-sm zoom_metaform_dropdown">
 
 <option value="-1"></option>
-<option value="0">Meeting Room 1.1</option>
+<option value="0">Meeting Room 1.3</option>
 
 <option value="1">Meeting Room 2.3</option>
 
-<option value="2">Congress Hall Dressing Room 222</option>
+<option value="2">Congress Hall Dressing Room 225</option>
 
-<option value="3">Congress Hall Dressing Room 221</option>
+<option value="3">Congress Hall Dressing Room 223</option>
 
-<option value="4">Congress Hall Dressing Room 225</option>
+<option value="4">Congress Hall Dressing Room 221</option>
 
-<option value="5">Congress Hall Dressing Room 223</option>
+<option value="5">Congress Hall Dressing Room 222</option>
 
 <option value="6">Congress Hall Dressing Room 224</option>
 
@@ -83,9 +141,9 @@
 
 <option value="15">North Hall</option>
 
-<option value="16">South Hall 2A</option>
+<option value="16">South Hall 2B</option>
 
-<option value="17">South Hall 2B</option>
+<option value="17">South Hall 2A</option>
 
 <option value="18">Forum Hall Foyer - Registration</option>
 
@@ -113,14 +171,14 @@
 
 <!--<a id="rslt">&nbsp;</a>--><div id="search_results" class="searchheading"><h1 class="">Search results</h1></div>
 <div class="summary">
-54 results <br>
+55 results <br>
 </div>
 
 <div class="results">
 <div class="result_block bg-success">
 <div class="result_title">
 <b>1.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0076.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0083.html">
  Are web surveys better at measuring political attitudes and voting behavior? A comparison between CRONOS web-panel and European Social Survey. 
 </a>
 </div>
@@ -142,8 +200,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0083" id="abstract_0083" name="abstract_0083" onclick="bkm(&#39;pres&#39;, &#39;abstract_0083&#39;, &#39;abstract_0083&#39;, 82)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Session 3 Room: Zoom Moderator/s: Florian F... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Sess... 
 </div>
 
 <div class="infoline">
@@ -153,7 +212,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>2.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0077.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0084.html">
  Ideological differences in motivated reasoning: what mechanisms lead to polarization? 
 </a>
 </div>
@@ -175,8 +234,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0084" id="abstract_0084" name="abstract_0084" onclick="bkm(&#39;pres&#39;, &#39;abstract_0084&#39;, &#39;abstract_0084&#39;, 83)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel Session 3 Room: Zoom Back Ideological di... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
@@ -186,7 +246,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>3.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0078.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0085.html">
  Think female leader, think…? An examination of the stereotypes of male and female politicians 
 </a>
 </div>
@@ -208,8 +268,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0085" id="abstract_0085" name="abstract_0085" onclick="bkm(&#39;pres&#39;, &#39;abstract_0085&#39;, &#39;abstract_0085&#39;, 84)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and Voting Behaviour Panel Session 3 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and V... 
 </div>
 
 <div class="infoline">
@@ -219,7 +280,41 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>4.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0079.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0086.html">
+ Policy making under minority governments: the bargaining success of cabinet and support parties 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P3-01</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Maria Thürk</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0086" id="abstract_0086" name="abstract_0086" onclick="bkm(&#39;pres&#39;, &#39;abstract_0086&#39;, &#39;abstract_0086&#39;, 85)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Po... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_block bg-success">
+<div class="result_title">
+<b>5.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0087.html">
  Clientelism, coercion, and vote choice: A survey experiment in a one-party state in India 
 </a>
 </div>
@@ -241,41 +336,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0087" id="abstract_0087" name="abstract_0087" onclick="bkm(&#39;pres&#39;, &#39;abstract_0087&#39;, &#39;abstract_0087&#39;, 86)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Session 3 Room: Zoom Moderator/s: Stefanie R... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_block bg-success">
-<div class="result_title">
-<b>5.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0080.html">
- Does Message Distortion by Rivals Affect Party Policy Images? Observational and Experimental Evidence 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-01</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Zeynep Somer-Topcu</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">10:00 - 10:15</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Politics Panel Session 3 Room: Zoom Moder... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -285,8 +348,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>6.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0081.html">
- Inside Job: Migration and Distributive Politics in the European Union 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0088.html">
+ Endogenous benchmarking limits political accountability during the Covid-19 pandemic 
 </a>
 </div>
 <div class="result_custommeta">
@@ -294,7 +357,7 @@
 <span class="result_meta_val">Fr-P3-01</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Merih Angin</span></div>
+<span class="result_meta_val">Michael Becher</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -307,8 +370,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0088" id="abstract_0088" name="abstract_0088" onclick="bkm(&#39;pres&#39;, &#39;abstract_0088&#39;, &#39;abstract_0088&#39;, 87)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy and Administration Panel Session 3 Roo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -318,7 +382,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>7.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0082.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0089.html">
  Abstain or Oppose? Conflict Avoidance and Delegation Decisions in the Council of Ministers 
 </a>
 </div>
@@ -340,8 +404,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0089" id="abstract_0089" name="abstract_0089" onclick="bkm(&#39;pres&#39;, &#39;abstract_0089&#39;, &#39;abstract_0089&#39;, 88)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room: Zoom Moderator/s: Tim Haughton Back A... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room... 
 </div>
 
 <div class="infoline">
@@ -351,7 +416,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>8.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0083.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0090.html">
  Force structure and local peacekeeping effectiveness: Micro-level evidence from sub-Saharan Africa 
 </a>
 </div>
@@ -373,8 +438,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:00 - 10:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0090" id="abstract_0090" name="abstract_0090" onclick="bkm(&#39;pres&#39;, &#39;abstract_0090&#39;, &#39;abstract_0090&#39;, 89)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conflict Panel Session 3 Room: Zoom Back Fo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conf... 
 </div>
 
 <div class="infoline">
@@ -384,8 +450,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>9.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0084.html">
- Representation and Party Building: Evidence from a Party Candidate Lottery in Mexico 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0091.html">
+ Does Political Representation Increase Participation? Evidence from Party Candidate Lotteries in Mexico 
 </a>
 </div>
 <div class="result_custommeta">
@@ -406,8 +472,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0091" id="abstract_0091" name="abstract_0091" onclick="bkm(&#39;pres&#39;, &#39;abstract_0091&#39;, &#39;abstract_0091&#39;, 90)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Session 3 Room: Zoom Moderator/s: Florian F... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Sess... 
 </div>
 
 <div class="infoline">
@@ -417,7 +484,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>10.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0085.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0092.html">
  A post-truth public? Investigating the mechanisms of resistance to factual correction 
 </a>
 </div>
@@ -439,8 +506,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0092" id="abstract_0092" name="abstract_0092" onclick="bkm(&#39;pres&#39;, &#39;abstract_0092&#39;, &#39;abstract_0092&#39;, 91)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel Session 3 Room: Zoom Back A post-truth p... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
@@ -450,7 +518,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>11.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0086.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0093.html">
  Learning From Polls 
 </a>
 </div>
@@ -472,8 +540,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0093" id="abstract_0093" name="abstract_0093" onclick="bkm(&#39;pres&#39;, &#39;abstract_0093&#39;, &#39;abstract_0093&#39;, 92)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and Voting Behaviour Panel Session 3 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and V... 
 </div>
 
 <div class="infoline">
@@ -483,8 +552,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>12.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0087.html">
- When does education promote democratic values? Evidence from curriculum reforms in Mexico, 1960-2010 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0094.html">
+ Political Statement Cycle 
 </a>
 </div>
 <div class="result_custommeta">
@@ -492,7 +561,7 @@
 <span class="result_meta_val">Fr-P3-02</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Agustina Paglayan</span></div>
+<span class="result_meta_val">Tomoko Matsumoto</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -505,8 +574,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0094" id="abstract_0094" name="abstract_0094" onclick="bkm(&#39;pres&#39;, &#39;abstract_0094&#39;, &#39;abstract_0094&#39;, 93)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Session 3 Room: Zoom Moderator/s: Stefanie R... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Po... 
 </div>
 
 <div class="infoline">
@@ -516,8 +586,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>13.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0088.html">
- Policy making under minority governments: the bargaining success of cabinet and support parties 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0095.html">
+ The Cosmopolitan Illusion: Anti-Immigration Vote in the City Center 
 </a>
 </div>
 <div class="result_custommeta">
@@ -525,7 +595,7 @@
 <span class="result_meta_val">Fr-P3-02</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Maria Thürk</span></div>
+<span class="result_meta_val">Gloria Gennaro</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -538,8 +608,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0095" id="abstract_0095" name="abstract_0095" onclick="bkm(&#39;pres&#39;, &#39;abstract_0095&#39;, &#39;abstract_0095&#39;, 94)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Politics Panel Session 3 Room: Zoom Moder... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -549,8 +620,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>14.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0089.html">
- Endogenous benchmarking limits political accountability during the Covid-19 pandemic 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0096.html">
+ The Deserving and the Undeserving: ``Heuristics'' or ``Automatism''? 
 </a>
 </div>
 <div class="result_custommeta">
@@ -558,7 +629,7 @@
 <span class="result_meta_val">Fr-P3-02</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Michael Becher</span></div>
+<span class="result_meta_val">Guido Tiemann</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -571,8 +642,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0096" id="abstract_0096" name="abstract_0096" onclick="bkm(&#39;pres&#39;, &#39;abstract_0096&#39;, &#39;abstract_0096&#39;, 95)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy and Administration Panel Session 3 Roo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -582,8 +654,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>15.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0090.html">
- Constructing Losers' Consent in European Union Politics: The Importance of Procedural Fairness 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0097.html">
+ Co-Decision and Responsiveness: the Case of EU Social Policy 
 </a>
 </div>
 <div class="result_custommeta">
@@ -591,7 +663,7 @@
 <span class="result_meta_val">Fr-P3-02</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Lisanne de Blok</span></div>
+<span class="result_meta_val">Miriam Sorace</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -604,8 +676,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0097" id="abstract_0097" name="abstract_0097" onclick="bkm(&#39;pres&#39;, &#39;abstract_0097&#39;, &#39;abstract_0097&#39;, 96)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room: Zoom Moderator/s: Tim Haughton Back C... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room... 
 </div>
 
 <div class="infoline">
@@ -615,7 +688,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>16.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0091.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0098.html">
  Arms Transfers and the Dynamics of Intervention 
 </a>
 </div>
@@ -637,8 +710,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:15 - 10:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0098" id="abstract_0098" name="abstract_0098" onclick="bkm(&#39;pres&#39;, &#39;abstract_0098&#39;, &#39;abstract_0098&#39;, 97)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conflict Panel Session 3 Room: Zoom Back Ar... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conf... 
 </div>
 
 <div class="infoline">
@@ -648,7 +722,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>17.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0092.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0099.html">
  Gamson-Shapley Laws: a Formal Approach to Parliamentary Coalition Formation 
 </a>
 </div>
@@ -670,8 +744,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0099" id="abstract_0099" name="abstract_0099" onclick="bkm(&#39;pres&#39;, &#39;abstract_0099&#39;, &#39;abstract_0099&#39;, 98)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Session 3 Room: Zoom Moderator/s: Florian F... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Methodology Panel Sess... 
 </div>
 
 <div class="infoline">
@@ -681,8 +756,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>18.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0093.html">
- What Should We Be Allowed to Post? Citizens’ Preferences for Online Hate Speech Regulation 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0100.html">
+ The more we choose, the less we learn? Effects of media polarization and fragmentation on political knowledge in five countries 
 </a>
 </div>
 <div class="result_custommeta">
@@ -690,7 +765,7 @@
 <span class="result_meta_val">Fr-P3-03</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Simon Munzert</span></div>
+<span class="result_meta_val">Laia Castro</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -703,8 +778,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0100" id="abstract_0100" name="abstract_0100" onclick="bkm(&#39;pres&#39;, &#39;abstract_0100&#39;, &#39;abstract_0100&#39;, 99)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel Session 3 Room: Zoom Back What Should We... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
@@ -714,7 +790,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>19.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0094.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0101.html">
  Votes and Participation: The Effect of Election Frequency on Voter Turnout 
 </a>
 </div>
@@ -736,8 +812,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0101" id="abstract_0101" name="abstract_0101" onclick="bkm(&#39;pres&#39;, &#39;abstract_0101&#39;, &#39;abstract_0101&#39;, 100)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and Voting Behaviour Panel Session 3 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and V... 
 </div>
 
 <div class="infoline">
@@ -747,8 +824,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>20.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0095.html">
- Political Statement Cycle 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0102.html">
+ Playing to the Gallery: How Politicians Use Emotive Rhetoric in Parliament 
 </a>
 </div>
 <div class="result_custommeta">
@@ -756,7 +833,7 @@
 <span class="result_meta_val">Fr-P3-03</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Tomoko Matsumoto</span></div>
+<span class="result_meta_val">Moritz Osnabruegge</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -769,8 +846,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0102" id="abstract_0102" name="abstract_0102" onclick="bkm(&#39;pres&#39;, &#39;abstract_0102&#39;, &#39;abstract_0102&#39;, 101)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Politics Panel Session 3 Room: Zoom Moder... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Po... 
 </div>
 
 <div class="infoline">
@@ -780,8 +858,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>21.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0096.html">
- The Cosmopolitan Illusion: Anti-Immigration Vote in the City Center 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0103.html">
+ Democracy in Hard Times: Economic Shocks, Social Capital and Voting Patterns 
 </a>
 </div>
 <div class="result_custommeta">
@@ -789,7 +867,7 @@
 <span class="result_meta_val">Fr-P3-03</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Gloria Gennaro</span></div>
+<span class="result_meta_val">Francesc Amat</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -802,8 +880,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0103" id="abstract_0103" name="abstract_0103" onclick="bkm(&#39;pres&#39;, &#39;abstract_0103&#39;, &#39;abstract_0103&#39;, 102)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Session 3 Room: Zoom Moderator/s: Stefanie R... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -813,8 +892,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>22.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0097.html">
- The Deserving and the Undeserving: ``Heuristics'' or ``Automatism''? 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0104.html">
+ Unbreakable legacies? Redistricting, Political Capital and the Personal Vote 
 </a>
 </div>
 <div class="result_custommeta">
@@ -822,7 +901,7 @@
 <span class="result_meta_val">Fr-P3-03</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Guido Tiemann</span></div>
+<span class="result_meta_val">Brenda Van Coppenolle</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -835,8 +914,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0104" id="abstract_0104" name="abstract_0104" onclick="bkm(&#39;pres&#39;, &#39;abstract_0104&#39;, &#39;abstract_0104&#39;, 103)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy and Administration Panel Session 3 Roo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -846,8 +926,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>23.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0098.html">
- Co-Decision and Responsiveness: the Case of EU Social Policy 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0105.html">
+ Why do states admit refugees? A comparative analysis of resettlement policies in the OECD countries 
 </a>
 </div>
 <div class="result_custommeta">
@@ -855,7 +935,7 @@
 <span class="result_meta_val">Fr-P3-03</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Miriam Sorace</span></div>
+<span class="result_meta_val">Philipp Lutz</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -868,8 +948,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0105" id="abstract_0105" name="abstract_0105" onclick="bkm(&#39;pres&#39;, &#39;abstract_0105&#39;, &#39;abstract_0105&#39;, 104)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room: Zoom Moderator/s: Tim Haughton Back C... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room... 
 </div>
 
 <div class="infoline">
@@ -879,7 +960,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>24.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0099.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0106.html">
  Backlash of bias? Bilateral linkages and rebel attacks on peacekeepers 
 </a>
 </div>
@@ -901,8 +982,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:30 - 10:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0106" id="abstract_0106" name="abstract_0106" onclick="bkm(&#39;pres&#39;, &#39;abstract_0106&#39;, &#39;abstract_0106&#39;, 105)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conflict Panel Session 3 Room: Zoom Back Ba... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conf... 
 </div>
 
 <div class="infoline">
@@ -912,40 +994,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>25.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0100.html">
- The more we choose, the less we learn? Effects of media polarization and fragmentation on political knowledge in five countries 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-04</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Laia Castro</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">10:45 - 11:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Communications Panel Session 3 Room: Zoom Back The more we ch... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>26.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0101.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0107.html">
  In favour of experts or against the status quo? Technocratic attitudes and voting behaviour ten years after the Eurozone crisis 
 </a>
 </div>
@@ -967,8 +1016,43 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:45 - 11:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0107" id="abstract_0107" name="abstract_0107" onclick="bkm(&#39;pres&#39;, &#39;abstract_0107&#39;, &#39;abstract_0107&#39;, 106)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and Voting Behaviour Panel Session 3 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and V... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>26.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0108.html">
+ Divide and Rule: Permits, Protest, and the Opposition in Autocracies 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P3-04</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Katerina Tertytchnaya</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">10:45 - 11:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0108" id="abstract_0108" name="abstract_0108" onclick="bkm(&#39;pres&#39;, &#39;abstract_0108&#39;, &#39;abstract_0108&#39;, 107)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -978,8 +1062,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>27.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0102.html">
- Democracy in Hard Times: Economic Shocks, Social Capital and Voting Patterns 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0109.html">
+ Political Entrepreneurship and Party Organization 
 </a>
 </div>
 <div class="result_custommeta">
@@ -987,7 +1071,7 @@
 <span class="result_meta_val">Fr-P3-04</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Francesc Amat</span></div>
+<span class="result_meta_val">Catherine  E. De Vries</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -1000,8 +1084,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:45 - 11:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0109" id="abstract_0109" name="abstract_0109" onclick="bkm(&#39;pres&#39;, &#39;abstract_0109&#39;, &#39;abstract_0109&#39;, 108)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Comparative Politics Panel Session 3 Room: Zoom Moderator/s: Stefanie R... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Po... 
 </div>
 
 <div class="infoline">
@@ -1011,8 +1096,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>28.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0103.html">
- Playing to the Gallery: How Politicians Use Emotive Rhetoric in Parliament 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0110.html">
+ The Structural Origins of Bureaucratic Reputation 
 </a>
 </div>
 <div class="result_custommeta">
@@ -1020,7 +1105,7 @@
 <span class="result_meta_val">Fr-P3-04</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Sara Hobolt</span></div>
+<span class="result_meta_val">Luca Bellodi</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -1033,8 +1118,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:45 - 11:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0110" id="abstract_0110" name="abstract_0110" onclick="bkm(&#39;pres&#39;, &#39;abstract_0110&#39;, &#39;abstract_0110&#39;, 109)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Politics Panel Session 3 Room: Zoom Moder... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -1044,73 +1130,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>29.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0104.html">
- Unbreakable legacies? Redistricting, Political Capital and the Personal Vote 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-04</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Brenda Van Coppenolle</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">10:45 - 11:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy and Administration Panel Session 3 Roo... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>30.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0105.html">
- Why do states admit refugees? A comparative analysis of resettlement policies in the OECD countries 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-04</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Philipp Lutz</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">10:45 - 11:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: EU Politics Panel Session 3 Room: Zoom Moderator/s: Tim Haughton Back W... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_block bg-success">
-<div class="result_title">
-<b>31.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0106.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0111.html">
  Keeping electoral peace? The activities of peacekeeping operations and its effects on election violence 
 </a>
 </div>
@@ -1132,8 +1152,77 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">10:45 - 11:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0111" id="abstract_0111" name="abstract_0111" onclick="bkm(&#39;pres&#39;, &#39;abstract_0111&#39;, &#39;abstract_0111&#39;, 110)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conflict Panel Session 3 Room: Zoom Back Ke... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conf... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>30.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0112.html">
+ Explaining Perceptions of Climate Change in the US 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P3-05</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Chiara Binelli</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">11:00 - 11:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0112" id="abstract_0112" name="abstract_0112" onclick="bkm(&#39;pres&#39;, &#39;abstract_0112&#39;, &#39;abstract_0112&#39;, 111)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Elections, Public Opinion, and V... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_block bg-success">
+<div class="result_title">
+<b>31.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0113.html">
+ Explaining and predicting interstate war deaths 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P3-05</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Marius Radean</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">11:00 - 11:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0113" id="abstract_0113" name="abstract_0113" onclick="bkm(&#39;pres&#39;, &#39;abstract_0113&#39;, &#39;abstract_0113&#39;, 112)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: International Relations and Conf... 
 </div>
 
 <div class="infoline">
@@ -1143,16 +1232,16 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>32.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0107.html">
- Political Entrepreneurship and Party Organization 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0114.html">
+ (Non)Renewable Terms and Judicial Independence in the European Court of Human Rights 
 </a>
 </div>
 <div class="result_custommeta">
 <span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-05</span></div>
+<span class="result_meta_val">Fr-P6-01</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Catherine  E. De Vries</span></div>
+<span class="result_meta_val">Øyvind Stiansen</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -1164,9 +1253,10 @@
 <span class="result_meta_val">Friday, 19 June</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
-<span class="result_meta_val">11:00 - 11:15</span></div>
+<span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0114" id="abstract_0114" name="abstract_0114" onclick="bkm(&#39;pres&#39;, &#39;abstract_0114&#39;, &#39;abstract_0114&#39;, 113)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Legislative Studies and Party Politics Panel Session 3 Room: Zoom Moder... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strate... 
 </div>
 
 <div class="infoline">
@@ -1176,40 +1266,7 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>33.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0108.html">
- The Structural Origins of Bureaucratic Reputation 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P3-05</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Luca Bellodi</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">11:00 - 11:15</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 10:00 - 11:30 P3: Political Economy, Public Policy and Administration Panel Session 3 Roo... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>34.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0109.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0115.html">
  Do Constitutional Courts write their opinions differently under public scrutiny? Applying NLP methods to uncover argument structure in judicial texts 
 </a>
 </div>
@@ -1231,18 +1288,19 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0115" id="abstract_0115" name="abstract_0115" onclick="bkm(&#39;pres&#39;, &#39;abstract_0115&#39;, &#39;abstract_0115&#39;, 114)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Methodology Panel Session 4 Room: Zoom Moderator/s: Florian F... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Methodology Panel Sess... 
 </div>
 
 <div class="infoline">
 
 </div></div>
 
-<div class="result_block bg-success">
+<div class="result_altblock bg-warning">
 <div class="result_title">
-<b>35.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0110.html">
+<b>34.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0116.html">
  Positive Spillovers from Negative Campaigning 
 </a>
 </div>
@@ -1264,41 +1322,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0116" id="abstract_0116" name="abstract_0116" onclick="bkm(&#39;pres&#39;, &#39;abstract_0116&#39;, &#39;abstract_0116&#39;, 115)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel Session 4 Room: Zoom Moderator/s: Rachel... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>36.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0111.html">
- Explaining Perceptions of Climate Change in the US 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P4-01</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Chiara Binelli</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:30 - 13:45</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Elections, Public Opinion, and Voting Behaviour Panel Session 4 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
@@ -1307,8 +1333,8 @@
 
 <div class="result_block bg-success">
 <div class="result_title">
-<b>37.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0112.html">
+<b>35.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0117.html">
  Global Economic Shocks, Local Economic Institutions, and Legislative Responses 
 </a>
 </div>
@@ -1330,8 +1356,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0117" id="abstract_0117" name="abstract_0117" onclick="bkm(&#39;pres&#39;, &#39;abstract_0117&#39;, &#39;abstract_0117&#39;, 116)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Session 4 Room: Zoom Moderator/s: Alexandra ... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -1340,8 +1367,8 @@
 
 <div class="result_altblock bg-warning">
 <div class="result_title">
-<b>38.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0113.html">
+<b>36.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0118.html">
  Within-party Polarization in Parliamentary Speech 
 </a>
 </div>
@@ -1363,8 +1390,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0118" id="abstract_0118" name="abstract_0118" onclick="bkm(&#39;pres&#39;, &#39;abstract_0118&#39;, &#39;abstract_0118&#39;, 117)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy and Administration Panel Session 4 Roo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -1373,8 +1401,8 @@
 
 <div class="result_block bg-success">
 <div class="result_title">
-<b>39.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0114.html">
+<b>37.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0119.html">
  Bargaining and Diplomatic Visits 
 </a>
 </div>
@@ -1396,8 +1424,77 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:30 - 13:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0119" id="abstract_0119" name="abstract_0119" onclick="bkm(&#39;pres&#39;, &#39;abstract_0119&#39;, &#39;abstract_0119&#39;, 118)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conflict Panel Session 4 Room: Zoom Back Ba... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conf... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>38.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0120.html">
+ Public Acceptance of Legal Opinions in an Age of Judicial Independence at Stake 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P6-02</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Benjamin Engst</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0120" id="abstract_0120" name="abstract_0120" onclick="bkm(&#39;pres&#39;, &#39;abstract_0120&#39;, &#39;abstract_0120&#39;, 119)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strate... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_block bg-success">
+<div class="result_title">
+<b>39.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0121.html">
+ Doing no harm? A systematic review of ethical challenges and safeguards for researchers “in field” 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P4-02</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Janina Steinert</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0121" id="abstract_0121" name="abstract_0121" onclick="bkm(&#39;pres&#39;, &#39;abstract_0121&#39;, &#39;abstract_0121&#39;, 120)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Methodology Panel Sess... 
 </div>
 
 <div class="infoline">
@@ -1407,7 +1504,7 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>40.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0115.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0122.html">
  Visual Messaging Modes and Their Impacts on British Attitudes Towards Economic Dimensions of Immigration 
 </a>
 </div>
@@ -1429,8 +1526,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0122" id="abstract_0122" name="abstract_0122" onclick="bkm(&#39;pres&#39;, &#39;abstract_0122&#39;, &#39;abstract_0122&#39;, 121)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel Session 4 Room: Zoom Moderator/s: Rachel... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
@@ -1440,8 +1538,8 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>41.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0116.html">
- Identity Formation between Structure and Agency – How 'Us' and 'Them' Relates to Voting Behavior in Contexts of Electoral Realignment 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0123.html">
+ Dissolution powers, coalition inclusion probabilities and the fulfilment of election pledges 
 </a>
 </div>
 <div class="result_custommeta">
@@ -1449,7 +1547,7 @@
 <span class="result_meta_val">Fr-P4-02</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Marco Steenbergen</span></div>
+<span class="result_meta_val">Petra Schleiter</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -1462,8 +1560,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0123" id="abstract_0123" name="abstract_0123" onclick="bkm(&#39;pres&#39;, &#39;abstract_0123&#39;, &#39;abstract_0123&#39;, 122)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Elections, Public Opinion, and Voting Behaviour Panel Session 4 Room: Z... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -1473,41 +1572,8 @@
 <div class="result_altblock bg-warning">
 <div class="result_title">
 <b>42.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0117.html">
- Dissolution powers, coalition inclusion probabilities and the fulfilment of election pledges 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P4-02</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Mark Kayser</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:45 - 14:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Session 4 Room: Zoom Moderator/s: Alexandra ... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_block bg-success">
-<div class="result_title">
-<b>43.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0118.html">
- Migration and redistributive spending: The impact of Central and Eastern Europeans on local authority service provision in England 
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0124.html">
+ Migration and redistributive spending: evidence from local authorities in England 
 </a>
 </div>
 <div class="result_custommeta">
@@ -1528,18 +1594,19 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0124" id="abstract_0124" name="abstract_0124" onclick="bkm(&#39;pres&#39;, &#39;abstract_0124&#39;, &#39;abstract_0124&#39;, 123)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy and Administration Panel Session 4 Roo... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
 
 </div></div>
 
-<div class="result_altblock bg-warning">
+<div class="result_block bg-success">
 <div class="result_title">
-<b>44.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0119.html">
+<b>43.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0125.html">
  The Missing Fingerprints: Women Legislators and Development Aid 
 </a>
 </div>
@@ -1561,8 +1628,43 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">13:45 - 14:00</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0125" id="abstract_0125" name="abstract_0125" onclick="bkm(&#39;pres&#39;, &#39;abstract_0125&#39;, &#39;abstract_0125&#39;, 124)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conflict Panel Session 4 Room: Zoom Back Th... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conf... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>44.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0126.html">
+ Clearly With or Without Merit? A Change in the Decision-Making Procedure and Judicial Outcomes. 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P6-03</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Judith Spirig</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0126" id="abstract_0126" name="abstract_0126" onclick="bkm(&#39;pres&#39;, &#39;abstract_0126&#39;, &#39;abstract_0126&#39;, 125)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strate... 
 </div>
 
 <div class="infoline">
@@ -1572,7 +1674,41 @@
 <div class="result_block bg-success">
 <div class="result_title">
 <b>45.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0120.html">
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0127.html">
+ Designing Surveys to Account for Non-Ignorable Non-Response 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P4-03</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Michael Bailey</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0127" id="abstract_0127" name="abstract_0127" onclick="bkm(&#39;pres&#39;, &#39;abstract_0127&#39;, &#39;abstract_0127&#39;, 126)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Methodology Panel Sess... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>46.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0128.html">
  Constituency focus and attitudes to MPs in the UK: how media deserts break the link 
 </a>
 </div>
@@ -1594,18 +1730,19 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0128" id="abstract_0128" name="abstract_0128" onclick="bkm(&#39;pres&#39;, &#39;abstract_0128&#39;, &#39;abstract_0128&#39;, 127)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel Session 4 Room: Zoom Moderator/s: Rachel... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Communications Panel S... 
 </div>
 
 <div class="infoline">
 
 </div></div>
 
-<div class="result_altblock bg-warning">
+<div class="result_block bg-success">
 <div class="result_title">
-<b>46.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0121.html">
+<b>47.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0129.html">
  Parliament in Crisis: Power of Representative Assemblies in XVII century 
 </a>
 </div>
@@ -1627,8 +1764,43 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0129" id="abstract_0129" name="abstract_0129" onclick="bkm(&#39;pres&#39;, &#39;abstract_0129&#39;, &#39;abstract_0129&#39;, 128)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Session 4 Room: Zoom Moderator/s: Alexandra ... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Sessi... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>48.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0130.html">
+ Inside Job: Migration and Distributive Politics in the European Union 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P4-03</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Merih Angin</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0130" id="abstract_0130" name="abstract_0130" onclick="bkm(&#39;pres&#39;, &#39;abstract_0130&#39;, &#39;abstract_0130&#39;, 129)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -1637,8 +1809,8 @@
 
 <div class="result_block bg-success">
 <div class="result_title">
-<b>47.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0122.html">
+<b>49.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0131.html">
  Delegating War 
 </a>
 </div>
@@ -1660,8 +1832,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:00 - 14:15</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0131" id="abstract_0131" name="abstract_0131" onclick="bkm(&#39;pres&#39;, &#39;abstract_0131&#39;, &#39;abstract_0131&#39;, 130)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conflict Panel Session 4 Room: Zoom Back De... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conf... 
 </div>
 
 <div class="infoline">
@@ -1670,9 +1843,77 @@
 
 <div class="result_altblock bg-warning">
 <div class="result_title">
-<b>48.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0123.html">
- Does female representation enhance democratic legitimacy? A natural experiment in India 
+<b>50.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0132.html">
+ Economic Conditions, Political Competition and Decision Making at the European Court of Justice 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P6-04</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Jay Krehbiel</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:15 - 14:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0132" id="abstract_0132" name="abstract_0132" onclick="bkm(&#39;pres&#39;, &#39;abstract_0132&#39;, &#39;abstract_0132&#39;, 131)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strate... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_block bg-success">
+<div class="result_title">
+<b>51.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0133.html">
+ When Do People Delegate Decisions to Experts? Evidence from Conjoint Experiments across Europe. 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P4-04</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Eri Bertsou</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:15 - 14:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0133" id="abstract_0133" name="abstract_0133" onclick="bkm(&#39;pres&#39;, &#39;abstract_0133&#39;, &#39;abstract_0133&#39;, 132)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Methodology Panel Sess... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_altblock bg-warning">
+<div class="result_title">
+<b>52.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0134.html">
+ Local Female Representation as a Pathway to Power: A Natural Experiment in India 
 </a>
 </div>
 <div class="result_custommeta">
@@ -1693,8 +1934,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:15 - 14:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0134" id="abstract_0134" name="abstract_0134" onclick="bkm(&#39;pres&#39;, &#39;abstract_0134&#39;, &#39;abstract_0134&#39;, 133)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Session 4 Room: Zoom Moderator/s: Alexandra ... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -1703,9 +1945,9 @@
 
 <div class="result_block bg-success">
 <div class="result_title">
-<b>49.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0124.html">
- Remitting Violence? The Impact of Third Country Resettlement on Terror Occurrence 
+<b>53.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0135.html">
+ When Co-ethnicity Fails: Explaining the Lower Public Goods Provision in Homogeneous Communities 
 </a>
 </div>
 <div class="result_custommeta">
@@ -1713,7 +1955,7 @@
 <span class="result_meta_val">Fr-P4-04</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Meredith Winn</span></div>
+<span class="result_meta_val">Alexander Kustov</span></div>
 <div class="result_custommeta">
 <span class="result_metaname">Presentation type: </span>
 <span class="result_meta_val">Oral presentation</span></div>
@@ -1726,8 +1968,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:15 - 14:30</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0135" id="abstract_0135" name="abstract_0135" onclick="bkm(&#39;pres&#39;, &#39;abstract_0135&#39;, &#39;abstract_0135&#39;, 134)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: International Relations and Conflict Panel Session 4 Room: Zoom Back Re... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Political Economy, Public Policy... 
 </div>
 
 <div class="infoline">
@@ -1736,8 +1979,42 @@
 
 <div class="result_altblock bg-warning">
 <div class="result_title">
-<b>50.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0125.html">
+<b>54.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0136.html">
+ Instrument of Power or Weapon of the Weak? Litigation and Legal Representation before the European Court of Justice 
+</a>
+</div>
+<div class="result_custommeta">
+<span class="result_metaname">Reference: </span>
+<span class="result_meta_val">Fr-P6-05</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presenter/s: </span>
+<span class="result_meta_val">Silje Hermansen</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Presentation type: </span>
+<span class="result_meta_val">Oral presentation</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Room: </span>
+<span class="result_meta_val">Zoom</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Date: </span>
+<span class="result_meta_val">Friday, 19 June</span></div>
+<div class="result_custommeta">
+<span class="result_metaname">Time: </span>
+<span class="result_meta_val">14:30 - 14:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0136" id="abstract_0136" name="abstract_0136" onclick="bkm(&#39;pres&#39;, &#39;abstract_0136&#39;, &#39;abstract_0136&#39;, 135)"> <div class="cb-label1">Save to the calendar</div></label></div>
+<div class="description">
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strate... 
+</div>
+
+<div class="infoline">
+
+</div></div>
+
+<div class="result_block bg-success">
+<div class="result_title">
+<b>55.</b>&nbsp;
+<a href="https://coms.events/EPSA-2020/data/abstracts/en/abstract_0137.html">
  Tax Appeals and Social Intermediaries: Evidence from a Field Experiment in Lagos, Nigeria 
 </a>
 </div>
@@ -1759,140 +2036,9 @@
 <div class="result_custommeta">
 <span class="result_metaname">Time: </span>
 <span class="result_meta_val">14:30 - 14:45</span></div>
+<div><hr class="hrbkm"><label class="checkbox-inline" data-children-count="1"> <input type="checkbox" value="abstract_0137" id="abstract_0137" name="abstract_0137" onclick="bkm(&#39;pres&#39;, &#39;abstract_0137&#39;, &#39;abstract_0137&#39;, 136)"> <div class="cb-label1">Save to the calendar</div></label></div>
 <div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Session 4 Room: Zoom Moderator/s: Alexandra ... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_block bg-success">
-<div class="result_title">
-<b>51.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0126.html">
- Economic Conditions, Political Competition and Decision Making at the European Court of Justice 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P6-04</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Jay Krehbiel</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:30 - 15:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strategic decision-making in courts in an era... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>52.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0127.html">
- Clearly With or Without Merit? A Change in the Decision-Making Procedure and Judicial Outcomes. 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P6-03</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Judith Spirig</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:30 - 15:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strategic decision-making in courts in an era... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_block bg-success">
-<div class="result_title">
-<b>53.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0128.html">
- Public Acceptance of Legal Opinions in an Age of Judicial Independence at Stake 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P6-02</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Benjamin Engst</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:30 - 15:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strategic decision-making in courts in an era... 
-</div>
-
-<div class="infoline">
-
-</div></div>
-
-<div class="result_altblock bg-warning">
-<div class="result_title">
-<b>54.</b>&nbsp;
-<a href="https://www.epsanet.org/programme/data/abstracts/en/abstract_0129.html">
- (Non)Renewable Terms and Judicial Independence in the European Court of Human Rights 
-</a>
-</div>
-<div class="result_custommeta">
-<span class="result_metaname">Reference: </span>
-<span class="result_meta_val">Fr-P6-01</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presenter/s: </span>
-<span class="result_meta_val">Øyvind Stiansen</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Presentation type: </span>
-<span class="result_meta_val">Oral presentation</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Room: </span>
-<span class="result_meta_val">Zoom</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Date: </span>
-<span class="result_meta_val">Friday, 19 June</span></div>
-<div class="result_custommeta">
-<span class="result_metaname">Time: </span>
-<span class="result_meta_val">13:30 - 15:00</span></div>
-<div class="description">
- EPSA-2020 Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P6: Judicial independence and strategic decision-making in courts in an era... 
+ EPSA Virtual 2020 (London UK times - UTC +01:00) Browse Search Calendar Thu, 18 Jun Fri, 19 Jun 13:30 - 15:00 P4: Comparative Politics Panel Sessi... 
 </div>
 
 <div class="infoline">
@@ -1901,12 +2047,11 @@
 
 </div>
 
-						<noscript>You must have JavaScript enabled to use this version of the search engine.</noscript>
-					</div>
-					<div id="bottom"></div>
-					<br><br><br>
-				</div>
-			</div>
-		</div>
-	
+<noscript>You must have JavaScript enabled to use this version of the search engine.</noscript>
+</div>
+ 
+<div id="bottom"></div>
+<br><br><br>
+
+</div></div></div>
 </body></html>
