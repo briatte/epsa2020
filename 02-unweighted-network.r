@@ -11,7 +11,7 @@ for (i in list.files("abstract", pattern = "^\\d", full.names = TRUE)) {
   h <- read_html(i)
 
   d <- tibble(
-    abstract = str_remove_all(basename(i), "\\D"),
+    abstract = i,
     authors = html_node(h, ".authors") %>%
       html_text(trim = TRUE),
     affiliations = html_node(h, ".affiliations") %>%
