@@ -70,7 +70,7 @@ e$edges <- d$affiliations %>%
   purrr::map(~ tidyr::crossing(i = .x, j = .x))
 
 # finalize edges
-e <- unnest(e, edges) %>%
+e <- tidyr::unnest(e, edges) %>%
   # de-duplication
   dplyr::rowwise() %>%
   dplyr::mutate(
