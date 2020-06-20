@@ -199,7 +199,7 @@ u <- unique(c(e$i, e$j))
 head(u[ order(str_length(u), decreasing = TRUE) ], 15)
 
 # export (append clean)
-readr::read_tsv("edges.tsv", col_types = "cc") %>%
+readr::read_tsv("edges.tsv", col_types = "ccci") %>%
   tibble::add_column(i_clean = e$i, .before = 2) %>%
   tibble::add_column(j_clean = e$j, .before = 4) %>%
   readr::write_tsv("edges.tsv")
