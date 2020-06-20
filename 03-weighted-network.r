@@ -12,9 +12,9 @@ library(igraph)
 
 d <- tibble()
 for (i in list.files("abstract", pattern = "^\\d", full.names = TRUE)) {
-  
+
   h <- read_html(i)
-  
+
   d <- tibble(
     abstract = i,
     authors = html_node(h, ".authors") %>%
@@ -23,7 +23,7 @@ for (i in list.files("abstract", pattern = "^\\d", full.names = TRUE)) {
       html_text(trim = TRUE)
   ) %>%
     bind_rows(d)
-  
+
 }
 
 # affiliations
@@ -105,13 +105,13 @@ e <- a$affils %>%
   str_split("\\d\\s") %>%
   tibble() %>%
   rename(affils = '.') %>%
-  mutate(artid = row_number()) %>% 
+  mutate(artid = row_number()) %>%
   unnest(cols = affils)  %>% #keep_empty = F , name_repair = "unique"
-  filter(!is_empty(affils, first.only = F)) 
-  
+  filter(!is_empty(affils, first.only = F))
+
 # export (unclean)
 readr::write_tsv(e, "bipartite.tsv")
-  
+
 e$affils <- str_fix(str_clean(str_prepare(e$affils)))
 
 # export (append clean)
@@ -121,18 +121,56 @@ readr::read_tsv("bipartite.tsv", col_types = "cc") %>%
 
 ## add an unique ID from 1 to n for each unique affiliation involved
 
-e <- e  %>% 
+e <- e  %>%
   distinct(affils, artid, .keep_all= TRUE) %>%
-  group_by(affils) %>%   
-  mutate(affils_id = cur_group_id())%>%   
-  ungroup() 
+  group_by(affils) %>%
+  mutate(affils_id = cur_group_id())%>%
+  ungroup()
 
 net <- select(e, e = affils_id, p = artid)
+
+# -- trying to do everything above with saved edge list from script 02 ---------
+
+# one-mode edge list
+e2 <- read_tsv("edges.tsv", col_types = "ccccci")
+# two-mode edge list
+e2 <- bind_rows(
+  select(e2, abstract, affiliation = i_clean),
+  select(e2, abstract, affiliation = j_clean)
+) %>%
+  # get numeric id for abstracts (event)
+  group_by(abstract) %>%
+  mutate(abs_id = cur_group_id(), .before = 2) %>%
+  # get numeric id for affiliations (actor)
+  group_by(affiliation) %>%
+  mutate(aff_id = cur_group_id()) %>%
+  distinct() %>%
+  ungroup()
+
+# e2 and net have the same number of abstract-affiliation ties, ...
+stopifnot(nrow(net) == nrow(e2))
+
+# ... so should result in same network than next line, but does not
+dim(projecting_tm(select(e2, abs_id, aff_id), method = "Newman"))
+dim(projecting_tm(net, method = "Newman"))
+
+# I think that's because your version (correctly) uses all abstract-affil edges,
+# including when it's from a single author:
+select(e, affils) %>% group_by(affils) %>% count(sort = TRUE)
+
+# mine has e.g. Yale one less time than you because, I guess, there must be a
+# single-authored paper from a Yale person, and that edge is not in edges.tsv
+select(e2, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
+
+# this seems to confirms the "I guess" above, artid 26 is single-authored Yale
+filter(e, artid %in% c(2, 25, 26, 28, 29, 48))
+
+# ------------------------------------------------------------------------------
 
 # weighting step
 # Newman's method or Netscity method according to the Whole Normalised Counting method used in NETSCITY
 
-onemode <- projecting_tm(net, method = "Newman") 
+onemode <- projecting_tm(net, method = "Newman")
 # or projecting_tm_twisted(net, method = "Netscity") if you wanna apply the Whole Normalised Counting method used in NETSCITY
 # projecting_tm_twisted function available here: https://framagit.org/MarionMai/netscityr/-/blob/master/Twisted-Projecting_tm-Function.R
 
@@ -150,7 +188,7 @@ V(g)$label <- V(g)$name # If necessary add "str_to_title"
 sum(E(g)$weight) # in case, you use the Netscity method, it would give you the number of articles (66!)
                  # with the Newman method, the edges' sum gives you 80.5
 
-flows <- bind_cols(get.edgelist(g),W_collab = E(g)$weight) %>%  
+flows <- bind_cols(get.edgelist(g),W_collab = E(g)$weight) %>%
          rename(Affil_i = "...1", Affil_j = "...2", )
 
 # export the flow table
