@@ -145,6 +145,10 @@ str_fix <- function(x) {
 e$i <- str_fix(str_clean(str_prepare(e$i)))
 e$j <- str_fix(str_clean(str_prepare(e$j)))
 
+# sanity check
+stopifnot(!is.na(e$i))
+stopifnot(!is.na(e$j))
+
 # longest strings
 u <- unique(c(e$i, e$j))
 head(u[ order(str_length(u), decreasing = TRUE) ], 15)
