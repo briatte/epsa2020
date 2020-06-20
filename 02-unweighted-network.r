@@ -57,20 +57,30 @@ str_extract_all(d$authors, "\\d,\\s+\\d") %>%
   unlist() %>%
   table()
 
-# edge list, built only from rows with multiples affiliations
-e <- a$affils[ which(purrr::map_int(a$ids, length) > 0) ] %>%
-  # remove spec chars and numbers that might hinder the `str_split` that follows
+# initalize edge list
+e <- select(d, abstract)
+
+# build (undirected) edges from affiliations
+e$edges <- d$affiliations %>%
+  # remove spec chars and numbers that might hinder `str_split` that follows
   str_remove_all("\\\n|\\\t|\\\r|\\d{2,}\\s") %>%
   str_split("\\d\\s") %>%
-  # remove empty "" strings
-  map(str_subset, "\\w+") %>%
-  # [NOTE]
-  # - we do NOT remove de-duplicate edges (degree distribution will be x 2)
-  # - we do NOT remove 'ghost' affiliations that are listed but not attached
-  #   to a given author (see e.g. affiliation no. 2 in abstract 0002)
-  purrr::map_df(~ tidyr::crossing(i = .x, j = .x)) %>%
-  # remove self-loops
-  dplyr::filter(i != j)
+  purrr::map(str_subset, "\\w+") %>%
+  # duplicated edges
+  purrr::map(~ tidyr::crossing(i = .x, j = .x))
+
+# finalize edges
+e <- unnest(e, edges) %>%
+  # de-duplication
+  dplyr::rowwise() %>%
+  dplyr::mutate(
+    i = sort(c(i, j))[ 1 ], # not very efficient (sorting twice)
+    j = sort(c(i, j))[ 2 ]
+  ) %>%
+  # remove duplicates
+  distinct() %>%
+  # remove self-ties
+  filter(i != j) %>%
 
 # clean up affiliations
 
