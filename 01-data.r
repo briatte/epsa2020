@@ -3,6 +3,8 @@ library(tidyverse)
 
 dir.create("abstract", showWarnings = FALSE)
 
+# -- Web scraping index pages won't work easily (JavaScript) -------------------
+
 # u <- paste0(
 #   "https://www.epsanet.org/programme/search/?zoom_query=&zoom_and=0",
 #   "&presenters=&pres_type=-1&room=-1&date=", 0:1, "&zoom_sort=0#rslt"
@@ -13,9 +15,11 @@ dir.create("abstract", showWarnings = FALSE)
 #     download.file(i, ., mode = "wb", quiet = TRUE)
 # }
 
-# Using index pages downloaded manually.
+# -- using index pages downloaded manually -------------------------------------
+
 # Thanks to Stefan Müller for the URLs:
 # https://twitter.com/ste_mueller/status/1272874116333346816
+
 for (i in list.files("search-results", pattern = "^jun", full.names = TRUE)) {
 
   u <- read_html(i) %>%
