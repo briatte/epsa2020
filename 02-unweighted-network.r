@@ -169,6 +169,13 @@ str_fix <- function(x) {
 e$i <- str_fix(str_clean(str_prepare(e$i)))
 e$j <- str_fix(str_clean(str_prepare(e$j)))
 
+# [NOTE] now that affiliations have been processed, there is a single
+#        duplicated edge (abstracts 0088 and 0117, same authors)
+ungroup(e) %>%
+  count(i, j) %>%
+  filter(n > 1) %>%
+  inner_join(e, by = c("i", "j"))
+
 # sanity check
 stopifnot(!is.na(e$i))
 stopifnot(!is.na(e$j))
@@ -183,8 +190,10 @@ readr::read_tsv("edges.tsv", col_types = "cc") %>%
   tibble::add_column(j_clean = e$j, .before = 4) %>%
   readr::write_tsv("edges.tsv")
 
-n <- as.matrix(e) %>%
-  # undirected (and not properly weighted, so duplicate edges) graph
+n <- cbind(e$i, e$j) %>%
+  # remove duplicated edge
+  unique() %>%
+  # undirected graph
   igraph::graph_from_edgelist(directed = FALSE)
 
 table(degree(n)) # divide by 2 for actual
