@@ -81,6 +81,20 @@ e <- unnest(e, edges) %>%
   distinct() %>%
   # remove self-ties
   filter(i != j) %>%
+  # count edges per abstract (computed only for digression below)
+  group_by(abstract) %>%
+  mutate(w = n())
+
+# [NOTE] For pseudo Newman 2001 weights, use: 1 / if_else(n() == 1, 1, n() - 1)
+#        See https://toreopsahl.com/tnet/two-mode-networks/projection/
+
+# very skewed edge 'weights'...
+table(e$w) / as.integer(names(table(e$w))) # `1` ties = 2 authors
+
+# ... because some authors have multiple affiliations: remember the true number
+# of authors is lower, range 1-6, which is why `w` above does not and cannot
+# truly compute Newman 2001 weights
+table(str_count(d$authors, ",") + 1)
 
 # clean up affiliations
 
