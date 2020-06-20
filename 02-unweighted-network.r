@@ -210,10 +210,10 @@ n <- cbind(e$i, e$j) %>%
   # undirected graph
   igraph::graph_from_edgelist(directed = FALSE)
 
-table(degree(n)) # divide by 2 for actual
-sort(degree(n)[ degree(n) > 14 ]) # German x 2, USA, ITA, NOR
+table(degree(n))
+sort(degree(n)[ degree(n) > 5 ]) # USA x 3, DEU x 3, GBR x 2, ITA, NOR, CHE
 
-V(n)$hi_degree <- dplyr::if_else(degree(n) >= 8, V(n)$name, NA_character_)
+V(n)$hi_degree <- dplyr::if_else(degree(n) >= 4, V(n)$name, NA_character_)
 
 ggplot(n, aes(x, y, xend = xend, yend = yend)) +
   geom_edges() +
@@ -221,6 +221,6 @@ ggplot(n, aes(x, y, xend = xend, yend = yend)) +
   geom_nodelabel(aes(label = hi_degree)) +
   theme_blank()
 
-ggsave("example-graph.png", width = 12, height = 10)
+ggsave("example-unweighted-graph.png", width = 12, height = 10)
 
 # kthxbye
