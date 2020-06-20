@@ -8,6 +8,12 @@ Labelling only nodes with a degree of 4+.
 
 ![](example-unweighted-graph.png)
 
+# Weighted graph
+
+Using the [`cartography`](https://cran.r-project.org/package=cartography) package for many of the non-graph elements.
+
+![](example-weighted-graph.jpg)
+
 # Credits
 
 Thanks to Stefan Müller for the [URLs](https://twitter.com/ste_mueller/status/1272874116333346816) to get all abstracts.
