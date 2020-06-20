@@ -72,6 +72,9 @@ e <- a$affils[ which(purrr::map_int(a$ids, length) > 0) ] %>%
   # remove self-loops
   dplyr::filter(i != j)
 
+# clean up affiliations
+
+# (1) take first part, removing cities, and remove 'university' keywords
 str_clean <- function(x) {
   # first part before comma
   str_extract(x, ".*?,") %>%
@@ -84,14 +87,23 @@ u <- unique(c(e$i, e$j))
 # export (unclean)
 readr::write_tsv(e, "edges.tsv")
 
-# ambiguous
+# (2) pre-process
 str_prepare <- function(x) {
   x %>%
+    # ambiguous UCx
     str_replace("University of California, Merced", "UC Merced") %>%
-    str_replace("University of California, Los Angeles", "UCLA")
+    str_replace("University of California, Los Angeles", "UCLA") %>%
+    # [TOFIX] missing a city in one affil. (abstract 131), but in fact a weird
+    #         case overall because affiliation is "PSE - Paris 1 Panthéon",
+    #         which gets parsed as two affiliations ("1"), and thus a tie...
+    #         leaving it at that for now
+    # print(c(e$i[3], e$j[3]))
+    str_replace("Paris School of Economics", "PSE, Paris")
 }
 
-# fix and shorten
+# (3) fix and shorten
+# [NOTE] composed against preliminary programme data, then appended with
+#        strings from the final one; some lines might not be useful anymore
 str_fix <- function(x) {
   x %>%
     str_replace("New York", "NYU") %>%
@@ -110,6 +122,8 @@ str_fix <- function(x) {
     str_replace("^Koc$", "Koç") %>%
     str_replace("Central European", "CEU") %>%
     str_replace("^2\\)$", "Paris 2") %>%
+    # [TOFIX] from abstract 131, weird case mentioned above
+    str_replace("Pantheon Sorbonne$", "Paris 1") %>%
     str_replace("Department of Social and Political Sciences", "Bocconi") %>%
     str_replace("School of International Development", "UEA") %>%
     str_replace("Vienna Institute of Demography/.*", "VID Vienna") %>%
@@ -136,7 +150,7 @@ str_fix <- function(x) {
     str_replace("Norwegian Institute of International Affairs", "NIIA Oslo") %>%
     str_replace("Norwegian Institute for Public Health", "NIPH Oslo") %>%
     str_replace("Center for Research and Social Progress", "CRSP Ponte dell'Olio") %>%
-    str_replace("^International Institute for Applied Systems Analysis", "IIASA")
+    str_replace("^International Institute for Applied Systems Analysis \\(IIASA\\)", "IIASA")
 }
 
 # View(tibble(from = u, to = str_fix(str_clean(u))))
