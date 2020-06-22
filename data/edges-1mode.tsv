@@ -1,0 +1,151 @@
+abstract	i	j	w
+0002	Gothenburg	Oslo	3
+0002	Gothenburg	PRIO	3
+0002	Oslo	PRIO	3
+0003	Georgetown	Minnesota	3
+0003	Georgetown	Princeton	3
+0003	Minnesota	Princeton	3
+0004	Duke	Oxford	1
+0005	Amsterdam	Koblenz-Landau	3
+0005	Amsterdam	Lausanne	3
+0005	Koblenz-Landau	Lausanne	3
+0007	Hertie	UCLA	1
+0008	NIIA Oslo	Oslo	3
+0008	NIIA Oslo	SAIS	3
+0008	Oslo	SAIS	3
+0009	Kentucky	Tulane	1
+0013	ETH	LSE	1
+0015	EUI	Mannheim	1
+0016	Cyprus	Pittsburgh	1
+0019	Rice	Texas A&M	1
+0020	Copenhagen	Humboldt	15
+0020	Copenhagen	Leiden	15
+0020	Copenhagen	Oslo	15
+0020	Copenhagen	Penn State	15
+0020	Copenhagen	Reading	15
+0020	Humboldt	Leiden	15
+0020	Humboldt	Oslo	15
+0020	Humboldt	Penn State	15
+0020	Humboldt	Reading	15
+0020	Leiden	Oslo	15
+0020	Leiden	Penn State	15
+0020	Leiden	Reading	15
+0020	Oslo	Penn State	15
+0020	Oslo	Reading	15
+0020	Penn State	Reading	15
+0021	Carlo Alberto	Columbia	1
+0022	Fukuoka	Harvard	3
+0022	Fukuoka	Hiroshima	3
+0022	Harvard	Hiroshima	3
+0024	Dublin	Exeter	6
+0024	Dublin	TCD	6
+0024	Dublin	Tulane	6
+0024	Exeter	TCD	6
+0024	Exeter	Tulane	6
+0024	TCD	Tulane	6
+0025	Essex	Texas A&M	1
+0026	Ben-Gurion	Leuven	3
+0026	Ben-Gurion	Montreal	3
+0026	Leuven	Montreal	3
+0028	Bocconi	ETH	1
+0030	Glasgow	Middelsex	3
+0030	Glasgow	Pittsburgh	3
+0030	Middelsex	Pittsburgh	3
+0031	Bocconi	Florida State	3
+0031	Bocconi	Yale	3
+0031	Florida State	Yale	3
+0032	Dublin	Zurich	1
+0033	Hertie	London	3
+0033	Hertie	Milano	3
+0033	London	Milano	3
+0034	Charlotte	Maryland	3
+0034	Charlotte	Uppsala	3
+0034	Maryland	Uppsala	3
+0039	Bocconi	Vrije Amsterdam	3
+0039	Bocconi	Zurich	3
+0039	Vrije Amsterdam	Zurich	3
+0040	Hertie	Mannheim	10
+0040	Hertie	Princeton	10
+0040	Hertie	UIUC	10
+0040	Hertie	USC	10
+0040	Mannheim	Princeton	10
+0040	Mannheim	UIUC	10
+0040	Mannheim	USC	10
+0040	Princeton	UIUC	10
+0040	Princeton	USC	10
+0040	UIUC	USC	10
+0041	Amsterdam	Uppsala	1
+0042	Basel	Geneva	1
+0043	NBS Oslo	Turku	6
+0043	NBS Oslo	UCSD	6
+0043	NBS Oslo	VATT Helsinki	6
+0043	Turku	UCSD	6
+0043	Turku	VATT Helsinki	6
+0043	UCSD	VATT Helsinki	6
+0048	Kyung Hee	Rochester	1
+0050	Charles	WZB	1
+0053	Chapman	Memphis	3
+0053	Chapman	SFU	3
+0053	Memphis	SFU	3
+0054	EUI	Oxford	3
+0054	EUI	QMUL	3
+0054	Oxford	QMUL	3
+0058	Koç	NYU Abu Dhabi	1
+0061	Bocconi	IIASA	6
+0061	Bocconi	UEA	6
+0061	Bocconi	VID Vienna	6
+0061	IIASA	UEA	6
+0061	IIASA	VID Vienna	6
+0061	UEA	VID Vienna	6
+0064	CEU	Paris 2	1
+0067	NYU	Sydney	1
+0075	LSE	UCSD	1
+0079	Columbia	Yale	1
+0080	IBEI Barcelona	UC Merced	3
+0080	IBEI Barcelona	Yale	3
+0080	UC Merced	Yale	3
+0081	Oxford	Princeton	1
+0084	Carlo Alberto	NYU	3
+0084	Carlo Alberto	Yale	3
+0084	NYU	Yale	3
+0085	Amsterdam	Vienna	1
+0088	Duke	IAST Toulouse	3
+0088	Duke	Sciences Po	3
+0088	IAST Toulouse	Sciences Po	3
+0090	Essex	Maryland	1
+0093	G-U Frankfurt	Humboldt	3
+0093	G-U Frankfurt	Zurich	3
+0093	Humboldt	Zurich	3
+0094	Kobe	TUS Tokyo	1
+0100	GWU	Zurich	1
+0101	Cambridge	Essex	6
+0101	Cambridge	Mannheim	6
+0101	Cambridge	Sciences Po	6
+0101	Essex	Mannheim	6
+0101	Essex	Sciences Po	6
+0101	Mannheim	Sciences Po	6
+0102	LSE	UPF	1
+0104	Essex	IAST Toulouse	1
+0105	Geneva	Lucerne	1
+0109	Bocconi	LSE	1
+0112	Bologna	CRSP Ponte dell'Olio	6
+0112	Bologna	Milano-Bicocca	6
+0112	Bologna	Tufts	6
+0112	CRSP Ponte dell'Olio	Milano-Bicocca	6
+0112	CRSP Ponte dell'Olio	Tufts	6
+0112	Milano-Bicocca	Tufts	6
+0113	Essex	Predictive Heuristics	1
+0117	Duke	IAST Toulouse	1
+0118	NBS Oslo	NIPH Oslo	1
+0121	GDI Bonn	Oxford	1
+0122	Birkbeck	Oxford	1
+0123	Hertie	Oxford	1
+0124	EUI	LSE	1
+0125	Leeds	USC	1
+0129	NYU	UPF	1
+0130	Boulder	Harvard	3
+0130	Boulder	Koç	3
+0130	Harvard	Koç	3
+0131	Paris 1	PSE	1
+0135	NYU Abu Dhabi	Yale	1
+0137	American	Texas A&M	1

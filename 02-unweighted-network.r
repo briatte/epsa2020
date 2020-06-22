@@ -49,7 +49,7 @@ ungroup(e) %>%
   inner_join(e, by = c("i", "j"))
 
 # export
-readr::write_tsv(e, "edges-1mode.tsv")
+readr::write_tsv(e, "data/edges-1mode.tsv")
 
 # -- unweighted, undirected one-mode network -----------------------------------
 
