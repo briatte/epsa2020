@@ -1,130 +1,24 @@
 library(rvest)
-library(dplyr)
-library(stringr)
-library(purrr)
-library(tidyr) # for unnest
-library(sjmisc) # for is_empty
-library(tnet)
+library(tidyverse)
 library(igraph)
+library(tnet)
 
+a <- readr::read_tsv("data/affiliations.tsv", col_types = "ccc") %>%
+  select(abstract, affils = affiliation_clean)
 
-# -- parse abstracts -----------------------------------------------------------
-
-d <- tibble()
-for (i in list.files("abstract", pattern = "^\\d", full.names = TRUE)) {
-
-  h <- read_html(i)
-
-  d <- tibble(
-    abstract = i,
-    authors = html_node(h, ".authors") %>%
-      html_text(trim = TRUE),
-    affiliations = html_node(h, ".affiliations") %>%
-      html_text(trim = TRUE)
-  ) %>%
-    bind_rows(d)
-
-}
-
-# affiliations
-a <- tibble(ids = stringr::str_extract_all(d$authors, "\\d"), affils = d$affiliations)
-
-# keep only rows with multiples affiliations
-a <- a[ which(purrr::map_int(a$ids, length) > 0), ]
-
-#------ f functions -----------------------------------------------------------------------------------
-
-str_clean <- function(x) {
-  # first part before comma
-  str_extract(x, ".*?,") %>%
-    str_remove_all("Univ.*\\s|(\\sUniversity)?,$")
-}
-
-# export (unclean)
-#readr::write_tsv(e, "edges.tsv")
-
-# ambiguous
-str_prepare <- function(x) {
-  x %>%
-    str_replace("University of California, Merced", "UC Merced") %>%
-    str_replace("University of California, Los Angeles", "UCLA")
-}
-
-# fix and shorten
-str_fix <- function(x) {
-  x %>%
-    str_replace("New York", "NYU") %>%
-    str_replace("European Institute", "EUI") %>%
-    str_replace("London School of Economics and Political Science", "LSE") %>%
-    str_replace("Hertie School(Berlin's Berlin)?", "Hertie") %>%
-    str_replace("George Washington", "GWU") %>%
-    str_replace("Tokyo Science", "TUS Tokyo") %>%
-    str_replace("^IAST$|Institute for Advanced Study in Toulouse", "IAST Toulouse") %>%
-    str_replace("Science Po", "Sciences Po") %>%
-    # different departments
-    str_replace("UCSD\\s.*|^Diego$", "UCSD") %>%
-    str_replace("Institut Barcelona d'Estudis Internacionals", "IBEI Barcelona") %>%
-    str_replace("Columbia Science", "Columbia") %>%
-    str_replace("Division of Social Science", "NYU Abu Dhabi") %>%
-    str_replace("^Koc$", "Koç") %>%
-    str_replace("Central European", "CEU") %>%
-    str_replace("^2\\)$", "Paris 2") %>%
-    str_replace("Department of Social and Political Sciences", "Bocconi") %>%
-    str_replace("School of International Development", "UEA") %>%
-    str_replace("Vienna Institute of Demography/.*", "VID Vienna") %>%
-    str_replace("Queen Mary London", "QMUL") %>%
-    str_replace("Simon Fraser", "SFU") %>%
-    str_replace("WZB Berlin Social Science Center", "WZB") %>%
-    str_replace("(BI )?Norwegian Business School", "NBS Oslo") %>%
-    str_replace("VATT Institute for Economic Research", "VATT Helsinki") %>%
-    str_replace("Texas A&M \\(USA\\)", "Texas A&M") %>%
-    str_replace("Trinity College Dublin", "TCD") %>%
-    str_replace("^Centre$", "Exeter") %>%
-    str_replace("Humboldt-Berlin", "Humboldt") %>%
-    str_replace("Mannheim Centre for European Social ResearchMannheim", "Mannheim") %>%
-    str_replace("London", "UCL") %>%
-    str_replace("Nuffield College", "Oxford") %>%
-    str_replace("Washington", "WUSL") %>%
-    str_replace("Carolina", "USC") %>%
-    # for both UPenn and Penn State
-    str_replace("Pennsylvania", "Penn") %>%
-    str_replace("Goethe-Frankfurt", "G-U Frankfurt") %>%
-    str_replace("Collegio Carlo Alberto", "Carlo Alberto") %>%
-    str_replace("^ETH Zurich$", "ETH") %>%
-    str_replace("^Fabra$", "UPF") %>%
-    str_replace("Norwegian Institute of International Affairs", "NIIA Oslo") %>%
-    str_replace("Norwegian Institute for Public Health", "NIPH Oslo") %>%
-    str_replace("Center for Research and Social Progress", "CRSP Ponte dell'Olio")
-}
-#----- back to the data -------------------------------------------------------------------------------------
-
-# edge list
-e <- a$affils %>%
-  # remove spec chars and numbers that might hinder the `str_split` that follows
-  str_remove_all("\\\n|\\\t|\\\r|\\d{2,}\\s") %>%
-  str_split("\\d\\s") %>%
-  tibble() %>%
-  rename(affils = '.') %>%
-  mutate(artid = row_number()) %>%
-  unnest(cols = affils)  %>% #keep_empty = F , name_repair = "unique"
-  filter(!is_empty(affils, first.only = F))
-
-# export (unclean)
-readr::write_tsv(e, "bipartite.tsv")
-
-e$affils <- str_fix(str_clean(str_prepare(e$affils)))
-
-# export (append clean)
-readr::read_tsv("bipartite.tsv", col_types = "cc") %>%
-  tibble::add_column(affils_clean = e$affils, .before = 2) %>% #
-  readr::write_tsv("bipartite.tsv")
+# export
+readr::write_tsv(a, "data/edges-2mode.tsv")
 
 ## add an unique ID from 1 to n for each unique affiliation involved
 
-e <- e  %>%
-  distinct(affils, artid, .keep_all= TRUE) %>%
+e <- a %>%
+  distinct(abstract, affils, .keep_all = TRUE) %>% # truly needed?
+  # numeric IDs for abstracts
+  group_by(abstract) %>%
+  mutate(artid = cur_group_id()) %>%
+  # numeric IDs for affiliations
   group_by(affils) %>%
-  mutate(affils_id = cur_group_id())%>%
+  mutate(affils_id = cur_group_id()) %>%
   ungroup()
 
 net <- select(e, e = affils_id, p = artid)
@@ -132,11 +26,11 @@ net <- select(e, e = affils_id, p = artid)
 # -- trying to do everything above with saved edge list from script 02 ---------
 
 # one-mode edge list
-e2 <- read_tsv("edges.tsv", col_types = "ccccci")
+e2 <- read_tsv("data/edges-1mode.tsv", col_types = "ccci")
 # two-mode edge list
 e2 <- bind_rows(
-  select(e2, abstract, affiliation = i_clean),
-  select(e2, abstract, affiliation = j_clean)
+  select(e2, abstract, affiliation = i),
+  select(e2, abstract, affiliation = j)
 ) %>%
   # get numeric id for abstracts (event)
   group_by(abstract) %>%
@@ -147,10 +41,11 @@ e2 <- bind_rows(
   distinct() %>%
   ungroup()
 
-# e2 and net have the same number of abstract-affiliation ties, ...
-stopifnot(nrow(net) == nrow(e2))
+# e2 and net are different in size...
+nrow(net)
+nrow(e2)
 
-# ... so should result in same network than next line, but does not
+# ... and so return different projections
 dim(projecting_tm(select(e2, abs_id, aff_id), method = "Newman"))
 dim(projecting_tm(net, method = "Newman"))
 
@@ -162,8 +57,8 @@ select(e, affils) %>% group_by(affils) %>% count(sort = TRUE)
 # single-authored paper from a Yale person, and that edge is not in edges.tsv
 select(e2, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
 
-# this seems to confirms the "I guess" above, artid 26 is single-authored Yale
-filter(e, artid %in% c(2, 25, 26, 28, 29, 48))
+# this seems to confirms the "I guess" above, abstract 82 = single-authored Yale
+filter(e, artid %in% c(1L, 31L, 38L, 79L, 80L, 82L, 84L, 135L))
 
 # ------------------------------------------------------------------------------
 
