@@ -194,4 +194,18 @@ order(str_length(a$affiliation_clean), decreasing = TRUE) %>%
 
 readr::write_tsv(arrange(a, abstract, affiliation_raw), "data/affiliations.tsv")
 
+# -- final notes about the data ------------------------------------------------
+
+# 1. There are a few (n = 8) cases where two affiliations (never more) are
+#    attached to a same person; we later build those as edges, even though they
+#    do not really stand for a co-authorship ties (weird self-ties, perhaps).
+
+str_extract_all(d$authors, "\\d,\\s+\\d") %>%
+  unlist() %>%
+  table()
+
+# 2. The preliminary programme contained a few 'ghost' affiliations that were
+#    listed but not attached to any listed author (an example was affiliation
+#    no. 2 in abstract 0002). The issue seems gone in the final programme data.
+
 # kthxbye

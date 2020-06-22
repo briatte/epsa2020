@@ -43,21 +43,7 @@ for (i in list.files("abstract", pattern = "^\\d", full.names = TRUE)) {
 
 # -- co-authorship ties between academic organizations -------------------------
 
-# [NOTES] about edge construction
-#
-# 1. There are a few (n = 8) cases where two affiliations (never more) are
-#    attached to a same person; we build those as edges, even though they do
-#    not really stand for a co-authorship tie (a weird self-tie, perhaps).
-#
-# 2. The preliminary programme contained a few 'ghost' affiliations that were
-#    listed but not attached to any listed author (an example was affiliation
-#    no. 2 in abstract 0002). The issue seems gone in the final programme data.
-
-str_extract_all(d$authors, "\\d,\\s+\\d") %>%
-  unlist() %>%
-  table()
-
-# initalize edge list
+# initialize edge list
 e <- select(d, abstract)
 
 # build (undirected) edges from affiliations
