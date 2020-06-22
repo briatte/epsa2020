@@ -181,6 +181,9 @@ str_fix <- function(x) {
 
 a$affiliation_clean <- str_fix(str_clean(str_prepare(a$affiliation_raw)))
 
+# sanity check
+stopifnot(!is.na(a$affiliation_clean))
+
 # longest strings
 order(str_length(a$affiliation_clean), decreasing = TRUE) %>%
   a$affiliation_clean[ . ] %>%
@@ -195,6 +198,9 @@ order(str_length(a$affiliation_clean), decreasing = TRUE) %>%
 readr::write_tsv(arrange(a, abstract, affiliation_raw), "data/affiliations.tsv")
 
 # -- final notes about the data ------------------------------------------------
+
+# number of authors
+table(str_count(d$authors, ",") + 1) # range 1--6
 
 # 1. There are a few (n = 8) cases where two affiliations (never more) are
 #    attached to a same person; we later build those as edges, even though they
