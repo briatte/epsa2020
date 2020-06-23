@@ -217,8 +217,8 @@ abstract	affiliation_raw	affiliation_clean
 0121	University of Oxford, Oxford	Oxford
 0122	Birkbeck, University of London, London	Birkbeck
 0122	University of Oxford, Oxford	Oxford
-0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse Berlin, Germany, Berlin	Hertie
-0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse Berlin, Germany, Berlin	Hertie
+0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
+0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
 0123	University of Oxford,Department of Political Science and International RelationsManor Road, Oxford	Oxford
 0124	European University Institute, Florence	EUI
 0124	London School of Economics and Political Science, London	LSE
@@ -232,11 +232,10 @@ abstract	affiliation_raw	affiliation_clean
 0130	Harvard University, Cambridge	Harvard
 0130	Koç University, Istanbul	Koç
 0130	University of Colorado Boulder, Boulder	Boulder
-0131	Pantheon Sorbonne, PARIS	Paris 1
-0131	Paris School of Economics - Université Paris 	PSE
+0131	Paris School of Economics - Université Paris 1 Pantheon Sorbonne, PARIS	Paris 1
 0132	West Virginia University, Morgantown	West Virginia
 0133	University of Zurich, Zurich	Zurich
-0134	Nuffield College, University of Oxford, OxfordYale University, New Haven	Oxford
+0134	Nuffield College, University of Oxford, Oxford, Yale University, New Haven	Oxford
 0135	NYU Abu Dhabi, Abu Dhabi	NYU Abu Dhabi
 0135	Yale University, New Haven	Yale
 0136	PluriCourts, University of Oslo, Oslo	PluriCourts

@@ -76,6 +76,10 @@ for (i in f) {
 
 }
 
+# numeric identifiers but stored as character; `abstract` is 4-padded
+d$panel <- str_remove_all(basename(d$panel), "\\D")
+d$abstract <- str_remove_all(basename(d$abstract), "\\D")
+
 cat("\n")
 
 readr::write_tsv(arrange(d, abstract), "data/abstracts.tsv")
@@ -85,15 +89,23 @@ readr::write_tsv(arrange(d, abstract), "data/abstracts.tsv")
 d$affiliation_raw <- d$affiliations %>%
   # remove spec. chars and numbers that might hinder `str_split` that follows
   # (damages postal codes and a few other things: see e.g. [TOFIX] below)
-  str_remove_all("\\\n|\\\t|\\\r|\\d{2,}\\s") %>%
-  str_split("\\d\\s") %>%
+  str_remove_all("\\\n|\\\t|\\\r") %>%
+  str_split("(,\\s)?\\d\\.\\s") %>%
   # lose empty "" strings
   purrr::map(str_subset, "\\w+")
 
 a <- select(d, abstract, affiliation_raw) %>%
   unnest(affiliation_raw)
 
-# (1) take first part, removing (mostly) cities
+# (1) pre-process
+str_prepare <- function(x) {
+  x %>%
+    # ambiguous UCx
+    str_replace("University of California, Merced", "UC Merced") %>%
+    str_replace("University of California, Los Angeles", "UCLA")
+}
+
+# (2) take first part, removing (mostly) cities
 str_clean <- function(x) {
   # first part before comma
   str_extract(x, ".*?,") %>%
@@ -101,21 +113,6 @@ str_clean <- function(x) {
     str_remove_all("^The\\s|Univ.*\\s|(\\sUniversity)?,$") %>%
     # get rid of useless punctuation
     str_remove_all("\\.")
-}
-
-# (2) pre-process
-str_prepare <- function(x) {
-  x %>%
-    # ambiguous UCx
-    str_replace("University of California, Merced", "UC Merced") %>%
-    str_replace("University of California, Los Angeles", "UCLA") %>%
-    # [TOFIX] missing a city in one affil. (abstract 131), but in fact a weird
-    #         case overall because affiliation is "PSE - Paris 1 Panthéon",
-    #         which gets parsed as two affiliations ("1"), and thus a tie...
-    #         leaving it at that for now
-    # d$affiliations[ d$abstract == "0131" ]
-    # a$affiliation_raw[ a$abstract == "0131" ]
-    str_replace("Paris School of Economics", "PSE, Paris")
 }
 
 # (3) fix and shorten
@@ -145,9 +142,8 @@ str_fix <- function(x) {
     str_replace("Division of Social Science", "NYU Abu Dhabi") %>%
     str_replace("^Koc$", "Koç") %>%
     str_replace("Central European", "CEU") %>%
-    str_replace("^2\\)$", "Paris 2") %>%
-    # [TOFIX] from abstract 131, weird case mentioned above
-    str_replace("Pantheon Sorbonne$", "Paris 1") %>%
+    str_replace("2\\)$", "Paris 2") %>%
+    str_replace("Paris.*Sorbonne$", "Paris 1") %>%
     str_replace("Department of Social and Political Sciences", "Bocconi") %>%
     str_replace("School of International Development", "UEA") %>%
     str_replace("Vienna Institute of Demography.*", "VID Vienna") %>%
@@ -185,7 +181,10 @@ str_fix <- function(x) {
     str_replace("^International Institute for Applied Systems Analysis \\(IIASA\\)", "IIASA")
 }
 
-a$affiliation_clean <- str_fix(str_clean(str_prepare(a$affiliation_raw)))
+# apply steps (1, 2, 3)
+a$affiliation_clean <- str_prepare(a$affiliation_raw) %>%
+  str_clean() %>%
+  str_fix()
 
 # sanity check
 stopifnot(!is.na(a$affiliation_clean))
@@ -212,12 +211,16 @@ table(str_count(d$authors, ",") + 1) # range 1--6
 #    attached to a same person; we later build those as edges, even though they
 #    do not really stand for a co-authorship ties (weird self-ties, perhaps).
 
-str_extract_all(d$authors, "\\d,\\s+\\d") %>%
+str_extract_all(d$authors, "\\d,\\d") %>%
   unlist() %>%
   table()
 
 # 2. The preliminary programme contained a few 'ghost' affiliations that were
 #    listed but not attached to any listed author (an example was affiliation
 #    no. 2 in abstract 0002). The issue seems gone in the final programme data.
+
+# 3. There are a few odd cases:
+#    - abstract 131, affiliation is PSE & Paris 1, gets simplified to latter
+#    - abstract 134, affiliation is Nuffield & Yale, gets simplified to former
 
 # kthxbye
