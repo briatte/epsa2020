@@ -59,12 +59,18 @@ for (i in f) {
 
   h <- read_html(i)
 
+  # # detailed metadata
+  # html_nodes(h, "meta") %>%
+  #   map_chr(html_attr, "content")
+
   d <- tibble(
-    abstract = str_remove_all(basename(i), "\\D"),
-    authors = html_node(h, ".authors") %>%
-      html_text(trim = TRUE),
-    affiliations = html_node(h, ".affiliations") %>%
-      html_text(trim = TRUE)
+    panel = html_nodes(h, xpath = "//a[contains(@href, 'session')]") %>%
+      html_attr("href"),
+    abstract = i,
+    authors = html_nodes(h, "meta[name='authors']") %>%
+      html_attr("content"),
+    affiliations = html_nodes(h, "meta[name='affiliations']") %>%
+      html_attr("content")
   ) %>%
     bind_rows(d)
 
