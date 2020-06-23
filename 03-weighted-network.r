@@ -77,7 +77,7 @@ E(g)$weight <- as.double(onemode$w)
 # remove multiple lines
 g <- simplify(g, remove.multiple = TRUE, edge.attr.comb = c(weight = "first", type = "ignore"))
 
-V(g)$name <- as.character(e$affils[match(V(g)$name,e$affils_id)])
+V(g)$name <- as.character(e$affils[match(V(g)$name,e$affils_id)]) # allows to replace numeric id_numbers by affiliations to name vertices
 V(g)$label <- V(g)$name # If necessary add "str_to_title"
 
 sum(E(g)$weight) # in case, you use the Netscity method, it would give you the number of articles (66!)
