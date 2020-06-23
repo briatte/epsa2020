@@ -54,7 +54,7 @@ readr::write_tsv(e, "data/edges-1mode.tsv")
 # -- unweighted, undirected one-mode network -----------------------------------
 
 n <- cbind(e$i, e$j) %>%
-  # remove duplicated edge
+  # remove (single) duplicated edge
   unique() %>%
   # undirected graph
   igraph::graph_from_edgelist(directed = FALSE)
