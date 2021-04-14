@@ -53,11 +53,12 @@ dim(projecting_tm(net, method = "Newman"))
 # including when it's from a single author:
 select(e, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
 
-# mine has e.g. Yale one less time than you because, I guess, there must be a
-# single-authored paper from a Yale person, and that edge is not in edges.tsv
+# mine has e.g. Yale 5 times and yours 8 times because, I guess, there must be
+# 3 single-authored papers from Yale authors, which do now appear in edges.tsv
 select(e2, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
 
-# this seems to confirms the "I guess" above, abstract 82 = single-authored Yale
+# this seems to confirms the "I guess" above
+# abstracts 1, 38, 82 = single-authored Yale papers
 filter(e, abs_id %in% c(1L, 31L, 38L, 79L, 80L, 82L, 84L, 135L))
 
 # ------------------------------------------------------------------------------
