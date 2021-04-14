@@ -87,7 +87,7 @@ lwd.edge <- ((breaks.edge[1:4]/max(E(g)$weight))*maxsize)
 opar <- par()
 
 # activate the following line if you want a pdf or svg output
-svg(file = "EPSA_network.svg", width = 8, height = 6)
+svg(file = "example-weighted-graph.svg", width = 8, height = 6)
 
 # generate a new plot
 plot.new()
