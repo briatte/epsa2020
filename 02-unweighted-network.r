@@ -13,19 +13,10 @@ e <- readr::read_tsv("data/affiliations.tsv", col_types = "ccc") %>%
 
 # finalize edges
 e <- tidyr::unnest(e, edges) %>%
-  # de-duplication
-  dplyr::rowwise() %>%
-  dplyr::mutate(
-    i = sort(c(i, j))[ 1 ], # not very efficient (sorting twice)
-    j = sort(c(i, j))[ 2 ]
-  ) %>%
-  # remove duplicates
-  distinct() %>%
-  # remove self-ties
-  filter(i != j) %>%
+  filter(i < j) %>%
   # count edges per abstract (computed only for digression below)
   group_by(abstract) %>%
-  mutate(w = n())
+  add_count(name = "w")
 
 # -- digression re: weighting the edges ----------------------------------------
 
