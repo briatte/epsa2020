@@ -64,11 +64,14 @@ filter(e, abs_id %in% c(1L, 31L, 38L, 79L, 80L, 82L, 84L, 135L))
 # ------------------------------------------------------------------------------
 
 # weighting step
-# Newman's method or Netscity method according to the Whole Normalised Counting method used in NETSCITY
-
+# Newman's method or Netscity method according to the Whole Normalised Counting
+# method used in NETSCITY
+net <- select(e2, e = aff_id, p = abs_id)
 onemode <- projecting_tm(net, method = "Newman")
-# or projecting_tm_twisted(net, method = "Netscity") if you wanna apply the Whole Normalised Counting method used in NETSCITY
-# projecting_tm_twisted function available here: https://framagit.org/MarionMai/netscityr/-/blob/master/Twisted-Projecting_tm-Function.R
+# or projecting_tm_twisted(net, method = "Netscity") if you wanna apply the
+# Whole Normalised Counting method used in NETSCITY `projecting_tm_twisted`
+# function available here:
+# https://framagit.org/MarionMai/netscityr/-/blob/master/Twisted-Projecting_tm-Function.R
 
 # transform the result into an igraph object
 
@@ -78,10 +81,12 @@ E(g)$weight <- as.double(onemode$w)
 # remove multiple lines
 g <- igraph::simplify(g, remove.multiple = TRUE, edge.attr.comb = c(weight = "first", type = "ignore"))
 
-V(g)$name <- as.character(e$affiliation[ match(V(g)$name, e$affils_id) ]) # allows to replace numeric id_numbers by affiliations to name vertices
+# allows to replace numeric id_numbers by affiliations to name vertices
+V(g)$name <- as.character(e$affiliation[ match(V(g)$name, e$affils_id) ])
 V(g)$label <- V(g)$name # If necessary add "str_to_title"
 
-sum(E(g)$weight) # in case, you use the Netscity method, it would give you the number of articles (66!)
+# if you use the Netscity method, it gives you the number of articles (66!)
+sum(E(g)$weight)
 # with the Newman method, the edges' sum gives you 80.5
 
 flows <- bind_cols(get.edgelist(g), weight = E(g)$weight) %>%
