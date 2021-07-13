@@ -76,6 +76,10 @@ for (i in f) {
 
 }
 
+# authors have extra spaces, but are clean otherwise
+# str_subset(d$authors, "\\.")
+d$authors <- str_squish(d$authors)
+
 # numeric identifiers but stored as character; `abstract` is 4-padded
 d$panel <- str_remove_all(basename(d$panel), "\\D")
 d$abstract <- str_remove_all(basename(d$abstract), "\\D")
