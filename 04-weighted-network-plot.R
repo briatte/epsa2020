@@ -3,7 +3,7 @@ library(igraph)
 library(cartography)
 
 # upload the edge table
-a <- readr::read_tsv("data/flows.tsv")
+a <- readr::read_tsv("data/flows.tsv", col_type = "ccd")
 
 # transform the edge table into an igraph object
 g <- igraph::graph_from_data_frame(a, directed = FALSE)
