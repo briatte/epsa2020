@@ -1,7 +1,7 @@
 library(rvest)
 library(tidyverse)
 
-fs::dir_create("abstract")
+fs::dir_create("html")
 fs::dir_create("data")
 
 # -- Web scraping index pages won't work easily (JavaScript) -------------------
@@ -21,7 +21,7 @@ fs::dir_create("data")
 # Thanks to Stefan Müller for the URLs:
 # https://twitter.com/ste_mueller/status/1272874116333346816
 
-for (i in fs::dir_ls("search-results", glob = "*.html")) {
+for (i in fs::dir_ls("html/conference-days", glob = "*.html")) {
 
   u <- read_html(i) %>%
     html_nodes("a") %>%
@@ -32,7 +32,7 @@ for (i in fs::dir_ls("search-results", glob = "*.html")) {
 
   for (j in rev(u)) {
 
-    f <- str_replace(basename(j), "_", "/")
+    f <- fs::path("html", "abstracts", basename(j))
 
     if (!file.exists(f)) {
       download.file(j, f, mode = "wb", quiet = TRUE)
@@ -50,8 +50,8 @@ for (i in fs::dir_ls("search-results", glob = "*.html")) {
 
 # -- parse abstracts -----------------------------------------------------------
 
-f <- fs::dir_ls("abstract", glob = "*.html")
 d <- tibble::tibble()
+f <- fs::dir_ls("html/abstracts", glob = "*.html")
 
 cat("Parsing", length(f), "abstracts...")
 
