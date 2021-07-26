@@ -50,43 +50,37 @@ for (i in fs::dir_ls("html/conference-days", glob = "*.html")) {
 
 # -- parse abstracts -----------------------------------------------------------
 
-d <- tibble::tibble()
 f <- fs::dir_ls("html/abstracts", glob = "*.html")
 
 cat("Parsing", length(f), "abstracts...")
 
-for (i in f) {
-
-  h <- read_html(i)
-
-  # # detailed metadata
-  # html_nodes(h, "meta") %>%
-  #   map_chr(html_attr, "content")
-
-  d <- tibble::tibble(
-    panel = html_nodes(h, xpath = "//a[contains(@href, 'session')]") %>%
-      html_attr("href"),
-    abstract = i,
-    authors = html_nodes(h, "meta[name='authors']") %>%
-      html_attr("content"),
-    affiliations = html_nodes(h, "meta[name='affiliations']") %>%
-      html_attr("content")
+d <- map(f, read_html) %>%
+  map_dfr(
+    ~ tibble::tibble(
+      # # detailed metadata
+      # html_nodes(.x, "meta") %>%
+      #   map_chr(html_attr, "content")
+      panel = html_nodes(.x, xpath = "//a[contains(@href, 'session')]") %>%
+        html_attr("href"),
+      authors = html_nodes(.x, "meta[name='authors']") %>%
+        html_attr("content"),
+      affiliations = html_nodes(.x, "meta[name='affiliations']") %>%
+        html_attr("content")
+    ),
+    .id = "abstract"
   ) %>%
-    bind_rows(d)
-
-}
-
-# authors have extra spaces, but are clean otherwise
-# str_subset(d$authors, "\\.")
-d$authors <- str_squish(d$authors)
-
-# numeric identifiers but stored as character; `abstract` is 4-padded
-d$panel <- str_remove_all(basename(d$panel), "\\D")
-d$abstract <- str_remove_all(basename(d$abstract), "\\D")
+  mutate(
+    # authors have extra spaces, but are clean otherwise
+    authors = str_squish(authors),
+    # numeric identifiers but stored as character; `abstract` is 4-padded
+    panel = str_remove_all(basename(panel), "\\D"),
+    abstract = str_remove_all(basename(abstract), "\\D")
+  ) %>%
+  arrange(abstract)
 
 cat("\n")
 
-readr::write_tsv(arrange(d, abstract), "data/abstracts.tsv")
+readr::write_tsv(d, "data/abstracts.tsv")
 
 # -- simplify affiliations -----------------------------------------------------
 
