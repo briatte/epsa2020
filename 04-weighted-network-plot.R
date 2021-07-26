@@ -1,4 +1,3 @@
-
 library(readr)
 library(igraph)
 library(cartography)
@@ -46,7 +45,7 @@ plot(g, vertex.label = NA, layout = fr)  #fr
 inches <- 0.03
 
 # choose the variable to which the size of the circles should be proportional
-var <- strength(g)
+var <- igraph::strength(g)
 
 # the following operations (line 53-62) allow to represent circles whose surface is proportional to a given variable
 # by default, the igraph.plot function varies the radius of the circles, not their surface
@@ -81,7 +80,7 @@ E(g)$width <-((E(g)$weight/max(E(g)$weight))*maxsize)
 breaks.edge <- seq(max(E(g)$weight), min(E(g)$weight), length.out = 5)
 
 # 2. list of thicknesses of the links appearing in the legend
-lwd.edge <- ((breaks.edge[1:4]/max(E(g)$weight))*maxsize)
+lwd.edge <- ((breaks.edge[1:4] / max(E(g)$weight)) * maxsize)
 
 # save the original graphic settings
 opar <- par()
@@ -93,7 +92,7 @@ svg(file = "example-weighted-graph.svg", width = 8, height = 6)
 plot.new()
 
 # normalize the space in which the vertices are positioned
-ln <- norm_coords(fr, ymin = -1, ymax = 1, xmin = -1, xmax = 1)
+ln <- igraph::norm_coords(fr, ymin = -1, ymax = 1, xmin = -1, xmax = 1)
 
 # setting new graphic parameters (xmin, xmax, ymin, ymax)
 par(mar = c(0, 0, 1.2, 0), usr = c(-1.3, 1.3, -1.3, 1.3))
@@ -103,8 +102,8 @@ par(mar = c(0, 0, 1.2, 0), usr = c(-1.3, 1.3, -1.3, 1.3))
 
 # [NOTE] necessary to avoid mismatch between the size of the nodes in the
 # {cartography} legend and the size of the nodes in the {igraph} plot
-xinch <- diff(par("usr")[1L:2])/par("pin")[1L]
-sizevect <- inches/xinch
+xinch <- diff(par("usr")[1L:2]) / par("pin")[1L]
+sizevect <- inches / xinch
 
 # plot the network and labels of the nodes
 plot(

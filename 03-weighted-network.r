@@ -46,16 +46,20 @@ nrow(net)
 nrow(e2)
 
 # ... and so return different projections
-dim(projecting_tm(select(e2, abs_id, aff_id), method = "Newman"))
-dim(projecting_tm(net, method = "Newman"))
+dim(tnet::projecting_tm(select(e2, abs_id, aff_id), method = "Newman"))
+dim(tnet::projecting_tm(net, method = "Newman"))
 
 # I think that's because your version (correctly) uses all abstract-affil edges,
 # including when it's from a single author:
-select(e, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
+select(e, affiliation) %>%
+  group_by(affiliation) %>%
+  count(sort = TRUE)
 
 # mine has e.g. Yale 5 times and yours 8 times because, I guess, there must be
 # 3 single-authored papers from Yale authors, which do now appear in edges.tsv
-select(e2, affiliation) %>% group_by(affiliation) %>% count(sort = TRUE)
+select(e2, affiliation) %>%
+  group_by(affiliation) %>%
+  count(sort = TRUE)
 
 # this seems to confirms the "I guess" above
 # abstracts 1, 38, 82 = single-authored Yale papers
@@ -67,7 +71,7 @@ filter(e, abs_id %in% c(1L, 31L, 38L, 79L, 80L, 82L, 84L, 135L))
 # Newman's method or Netscity method according to the Whole Normalised Counting
 # method used in NETSCITY
 net <- select(e2, e = aff_id, p = abs_id)
-onemode <- projecting_tm(net, method = "Newman")
+onemode <- tnet::projecting_tm(net, method = "Newman")
 # or projecting_tm_twisted(net, method = "Netscity") if you wanna apply the
 # Whole Normalised Counting method used in NETSCITY `projecting_tm_twisted`
 # function available here:
@@ -75,7 +79,7 @@ onemode <- projecting_tm(net, method = "Newman")
 
 # transform the result into an igraph object
 
-g <- graph_from_data_frame(cbind(onemode$i, onemode$j), directed = FALSE)
+g <- igraph::graph_from_data_frame(cbind(onemode$i, onemode$j), directed = FALSE)
 E(g)$weight <- as.double(onemode$w)
 
 # remove multiple lines
@@ -89,9 +93,9 @@ V(g)$label <- V(g)$name # If necessary add "str_to_title"
 sum(E(g)$weight)
 # with the Newman method, the edges' sum gives you 80.5
 
-flows <- bind_cols(get.edgelist(g), weight = E(g)$weight) %>%
+flows <- bind_cols(igraph::as_edgelist(g), weight = E(g)$weight) %>%
   rename(i = "...1", j = "...2", )
 
 # export the flow table
 
-write_tsv(flows, "data/flows.tsv")
+readr::write_tsv(flows, "data/flows.tsv")

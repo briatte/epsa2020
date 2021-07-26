@@ -1,8 +1,8 @@
 library(rvest)
 library(tidyverse)
 
-dir.create("abstract", showWarnings = FALSE)
-dir.create("data", showWarnings = FALSE)
+fs::dir_create("abstract")
+fs::dir_create("data")
 
 # -- Web scraping index pages won't work easily (JavaScript) -------------------
 
@@ -21,7 +21,7 @@ dir.create("data", showWarnings = FALSE)
 # Thanks to Stefan Müller for the URLs:
 # https://twitter.com/ste_mueller/status/1272874116333346816
 
-for (i in list.files("search-results", pattern = "^jun", full.names = TRUE)) {
+for (i in fs::dir_ls("search-results", glob = "*.html")) {
 
   u <- read_html(i) %>%
     html_nodes("a") %>%
@@ -50,8 +50,8 @@ for (i in list.files("search-results", pattern = "^jun", full.names = TRUE)) {
 
 # -- parse abstracts -----------------------------------------------------------
 
-f <- list.files("abstract", pattern = "^\\d", full.names = TRUE)
-d <- tibble()
+f <- fs::dir_ls("abstract", glob = "*.html")
+d <- tibble::tibble()
 
 cat("Parsing", length(f), "abstracts...")
 
@@ -63,7 +63,7 @@ for (i in f) {
   # html_nodes(h, "meta") %>%
   #   map_chr(html_attr, "content")
 
-  d <- tibble(
+  d <- tibble::tibble(
     panel = html_nodes(h, xpath = "//a[contains(@href, 'session')]") %>%
       html_attr("href"),
     abstract = i,
@@ -99,7 +99,7 @@ d$affiliation_raw <- d$affiliations %>%
   purrr::map(str_subset, "\\w+")
 
 a <- select(d, abstract, affiliation_raw) %>%
-  unnest(affiliation_raw)
+  tidyr::unnest(affiliation_raw)
 
 # (1) pre-process
 str_prepare <- function(x) {
