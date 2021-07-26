@@ -26,7 +26,8 @@ for (i in fs::dir_ls("html/conference-days", glob = "*.html")) {
   u <- read_html(i) %>%
     html_nodes("a") %>%
     html_attr("href") %>%
-    str_subset("abstract_\\d+\\.html")
+    str_subset("abstract_\\d+\\.html") %>%
+    str_replace("^\\.\\.", "https://coms.events/EPSA-2020")
 
   cat(basename(i), ":", length(u), "URLs ...")
 
@@ -34,7 +35,7 @@ for (i in fs::dir_ls("html/conference-days", glob = "*.html")) {
 
     f <- fs::path("html", "abstracts", basename(j))
 
-    if (!file.exists(f)) {
+    if (!fs::file_exists(f)) {
       download.file(j, f, mode = "wb", quiet = TRUE)
     }
 
