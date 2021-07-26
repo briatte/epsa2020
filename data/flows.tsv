@@ -1,0 +1,149 @@
+i	j	weight
+American	Penn	1
+Amsterdam	IAS Vienna	0.5
+Amsterdam	IHEID	0.5
+Amsterdam	SAIS	1
+Amsterdam	Sydney	1
+Barcelona	Florida State	1
+Basel	Kentucky	0.5
+Basel	LMU Munich	0.5
+Ben-Gurion	Memphis	1
+Birkbeck	Dublin	1
+Birkbeck	ETH	0.5
+Birkbeck	HHL Leipzig	0.3333333333333333
+Birkbeck	Koblenz-Landau	1
+Birkbeck	Reading	0.3333333333333333
+Birkbeck	Strathclyde	0.3333333333333333
+Birkbeck	TCD	0.5
+Birkbeck	Texas A&M	0.5
+Birkbeck	Tufts	0.5
+Bocconi	Cologne	0.3333333333333333
+Bocconi	Leuven	0.3333333333333333
+Bocconi	Penn State	0.3333333333333333
+Bologna	Georgetown	0.5
+Bologna	IAST Toulouse	0.5
+Boulder	Cyprus	0.3333333333333333
+Boulder	Konstanz	0.3333333333333333
+Boulder	Oslo	0.3333333333333333
+Cambridge	Charlotte	1
+Cambridge	Manchester	0.5
+Cambridge	Texas A&M	0.5
+Carlo Alberto	Mexico	1
+CEU	Lausanne	0.5
+CEU	Oxford	0.5
+Chapman	Texas	1
+Charles	Kyung Hee	0.5
+Charles	SAIS	0.5
+Charlotte	Texas A&M	1
+Chicago	GWU	0.2
+Chicago	JHU	0.2
+Chicago	Maryland	0.2
+Chicago	Middelsex	0.2
+Chicago	NIIA Oslo	0.2
+Cologne	Leuven	0.3333333333333333
+Cologne	Penn State	0.3333333333333333
+Columbia	Milano	1
+Copenhagen	Essex	0.3333333333333333
+Copenhagen	Paris 2	0.3333333333333333
+Copenhagen	Pittsburgh	0.3333333333333333
+Copenhagen	Tufts	1
+CRSP Ponte dell'Olio	Harvard	1.5
+CRSP Ponte dell'Olio	Memphis	1
+CRSP Ponte dell'Olio	Oslo	0.5
+Cyprus	Harvard	1
+Cyprus	Konstanz	0.3333333333333333
+Cyprus	Kyung Hee	1
+Cyprus	Milano-Bicocca	1
+Cyprus	Oslo	0.3333333333333333
+Cyprus	Penn	1
+Dublin	Koblenz-Landau	1
+Duke	Koblenz-Landau	1
+Duke	Konstanz	1
+Duke	Memphis	0.5
+Duke	NBS Oslo	0.5
+Essex	Paris 2	0.3333333333333333
+Essex	Pittsburgh	0.3333333333333333
+ETH	Texas A&M	0.5
+EUI	Georgetown	0.5
+EUI	Gothenburg	0.5
+Exeter	GWU	0.5
+Exeter	Tufts	0.5
+Florida	Memphis	1
+Florida State	Koç	1
+Fukuoka	Lisbon	0.5
+Fukuoka	Minnesota	0.5
+G-U Frankfurt	Leeds	0.5
+G-U Frankfurt	Milano	0.5
+GDI Bonn	Maryland	0.5
+GDI Bonn	Montreal	0.5
+Geneva	Tufts	1
+Georgetown	Gothenburg	0.5
+Georgetown	IAST Toulouse	0.5
+Glasgow	Kobe	0.5
+Glasgow	Konstanz	0.25
+Glasgow	Leiden	0.5
+Glasgow	Memphis	1
+Glasgow	Minnesota	0.25
+Glasgow	PRIO	1
+Glasgow	Rice	0.25
+Glasgow	Sciences Po	0.25
+GWU	JHU	0.2
+GWU	Maryland	0.2
+GWU	Middelsex	0.2
+GWU	NIIA Oslo	0.2
+GWU	Tufts	0.5
+Harvard	Oslo	0.5
+Hertie	Princeton	0.5
+Hertie	Texas A&M	0.5
+HHL Leipzig	Reading	0.3333333333333333
+HHL Leipzig	Strathclyde	0.3333333333333333
+Hiroshima	Pittsburgh	1
+Humboldt	Predictive Heuristics	1
+IAS Vienna	IHEID	0.5
+IAST Toulouse	Mannheim	1
+IBEI Barcelona	NYU	1
+IIASA	Sciences Po	1
+JHU	Maryland	0.2
+JHU	Middelsex	0.2
+JHU	NIIA Oslo	0.2
+Kentucky	LMU Munich	0.5
+Kobe	Leiden	0.5
+Koblenz-Landau	QMUL	1
+Koblenz-Landau	Rochester	1
+Konstanz	Minnesota	0.25
+Konstanz	Oslo	0.3333333333333333
+Konstanz	Rice	0.25
+Konstanz	Sciences Po	0.25
+Kyung Hee	SAIS	0.5
+Lausanne	Oxford	0.5
+Leeds	Milano	0.5
+Leuven	Penn State	0.3333333333333333
+Lisbon	Minnesota	0.5
+London	Lucerne	1
+London	PluriCourts	0.3333333333333333
+London	QMUL	0.3333333333333333
+London	SFU	0.3333333333333333
+LSE	Maryland	0.5
+LSE	NYU Abu Dhabi	0.5
+Manchester	Paris 1	1
+Manchester	Rochester	1
+Manchester	Texas A&M	0.5
+Mannheim	Texas A&M	1
+Maryland	Middelsex	0.2
+Maryland	Montreal	0.5
+Maryland	NIIA Oslo	0.2
+Maryland	NYU Abu Dhabi	0.5
+Memphis	Minnesota	1
+Memphis	NBS Oslo	0.5
+Middelsex	NIIA Oslo	0.2
+Minnesota	Rice	0.25
+Minnesota	Sciences Po	0.25
+NIPH Oslo	Penn	1
+Paris 2	Pittsburgh	0.3333333333333333
+PluriCourts	QMUL	0.3333333333333333
+PluriCourts	SFU	0.3333333333333333
+Princeton	Texas A&M	0.5
+QMUL	SFU	0.3333333333333333
+Reading	Strathclyde	0.3333333333333333
+Rice	Sciences Po	0.25
+TCD	Tufts	0.5

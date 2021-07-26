@@ -31,8 +31,8 @@ abstract	affiliation_raw	affiliation_clean
 0016	University of Cyprus, Nicosia	Cyprus
 0016	University of Pittsburgh, Pittsburgh	Pittsburgh
 0016	University of Pittsburgh, Pittsburgh	Pittsburgh
-0017	Universitat Pompeu Fabra, Barcelona	UPF
-0018	University of Geneva, Geneve	Geneva
+0017	University of Geneva, Geneve	Geneva
+0018	Universitat Pompeu Fabra, Barcelona	UPF
 0019	Rice University, Houston	Rice
 0019	Texas A&M University, College Station	Texas A&M
 0020	Humboldt-Universität zu Berlin, Berlin	Humboldt
@@ -53,10 +53,10 @@ abstract	affiliation_raw	affiliation_clean
 0024	University of Exeter & Exeter Q-Step Centre, Exeter	Exeter
 0025	Texas A&M University (USA), College Station	Texas A&M
 0025	University of Essex, Colchester	Essex
-0026	Ben-Gurion University, Beer Sheva	Ben-Gurion
-0026	Leuven University, Leuven	Leuven
-0026	University of Montreal, Montreal	Montreal
-0027	Mannheim Centre for European Social Research, University of Mannheim, Mannheim	Mannheim
+0026	Mannheim Centre for European Social Research, University of Mannheim, Mannheim	Mannheim
+0027	Ben-Gurion University, Beer Sheva	Ben-Gurion
+0027	Leuven University, Leuven	Leuven
+0027	University of Montreal, Montreal	Montreal
 0028	Bocconi University, Milano	Bocconi
 0028	ETH, Zurich	ETH
 0029	Cologne Center for Comparative Politics, University of Cologne, Cologne	Cologne
@@ -142,17 +142,17 @@ abstract	affiliation_raw	affiliation_clean
 0075	UCSD, La Jolla	UCSD
 0076	University of Mannheim, Mannheim	Mannheim
 0077	University of Pennsylvania, Philadelphia	Penn
+0078	Nuffield College, University of Oxford, Oxford	Oxford
 0078	Princeton University, Princeton	Princeton
-0079	Columbia University, New York	Columbia
 0079	Yale University, New Haven	Yale
-0080	Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona
-0080	University of California, Merced, Merced	UC Merced
-0080	Yale University, New Haven	Yale
-0081	Nuffield College, University of Oxford, Oxford	Oxford
-0081	Princeton University, Princeton	Princeton
+0079	Yale University, New Haven	Yale
+0080	Princeton University, Princeton	Princeton
+0081	Institut Barcelona d'Estudis Internacionals, Barcelona	IBEI Barcelona
+0081	University of California, Merced, Merced	UC Merced
+0081	Yale University, New Haven	Yale
+0082	Columbia University, New York	Columbia
 0082	Yale University, New Haven	Yale
-0082	Yale University, New Haven	Yale
-0083	University of Sydney / Political Economy Department, Sydney	Department
+0083	Texas A&M University, College Station	Texas A&M
 0084	Collegio Carlo Alberto, Turin	Carlo Alberto
 0084	New York University, New York	NYU
 0084	Yale University, New Haven	Yale
@@ -166,7 +166,7 @@ abstract	affiliation_raw	affiliation_clean
 0089	Department of Government, London School of economics and Political Science, London	LSE
 0090	University of Essex, Wivenhoe	Essex
 0090	University of Maryland, Washington DC	Maryland
-0091	Texas A&M University, College Station	Texas A&M
+0091	HHL Leipzig Graduate School of Management, Leipzig	HHL Leipzig
 0092	University of Essex, Colchester	Essex
 0093	Goethe-Universität Frankfurt, Frankfurt	G-U Frankfurt
 0093	Humboldt University, Berlin	Humboldt
@@ -177,67 +177,66 @@ abstract	affiliation_raw	affiliation_clean
 0096	Institute for Advanced Studies, Vienna	IAS Vienna
 0097	LSE, London	LSE
 0098	Vanderbilt University, Nashville, TN	Vanderbilt
-0099	HHL Leipzig Graduate School of Management, Leipzig	HHL Leipzig
-0100	George Washington University, Washington DC	GWU
-0100	University of Zurich, Zurich	Zurich
-0101	Sciences Po, Paris	Sciences Po
-0101	University of Cambridge, Cambridge	Cambridge
-0101	University of Essex, Wivenhoe	Essex
-0101	University of Mannheim, Mannheim	Mannheim
-0102	London School of Economics and Political Science, London	LSE
-0102	Universitat Pompeu Fabra, Barcelona	UPF
-0103	Institutions and Political Economy Research Group - University of Barcelona, Barcelona	Barcelona
-0104	IAST, Toulouse	IAST Toulouse
-0104	University of Essex, Colchester	Essex
-0105	University of Geneva, Geneva	Geneva
-0105	University of Lucerne, Lucerne	Lucerne
-0106	WU Wien, Vienna	WU Wien
-0107	Instituto de Ciências Sociais, Universidade de Lisboa, Lisboa	Lisbon
-0108	UCL, London	UCL
-0109	Bocconi University, Milan	Bocconi
-0109	London School of Economics and Political Science, London	LSE
-0110	University College London, London	London
-0111	University of Zurich, Zurich	Zurich
-0112	Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio
-0112	Tufts University, Boston	Tufts
-0112	Univeristy of Bologna, Bologna	Bologna
-0112	University of Milano-Bicocca, Milan	Milano-Bicocca
-0113	Predictive Heuristics., Tallinn	Predictive Heuristics
-0113	University of Essex, Colchester	Essex
-0114	PluriCourts, University of Oslo, Oslo	PluriCourts
-0115	University of Mannheim, Mannheim	Mannheim
-0116	Bocconi University, Milano	Bocconi
-0117	Duke University, Durham	Duke
-0117	IAST, Toulouse	IAST Toulouse
-0118	BI Norwegian Business School, Oslo	NBS Oslo
-0118	Norwegian Institute for Public Health, Oslo	NIPH Oslo
-0119	New York University, New York	NYU
-0120	University of Mannheim, Mannheim	Mannheim
-0121	German Development Institute, Bonn	GDI Bonn
+0099	George Washington University, Washington DC	GWU
+0099	University of Zurich, Zurich	Zurich
+0100	Sciences Po, Paris	Sciences Po
+0100	University of Cambridge, Cambridge	Cambridge
+0100	University of Essex, Wivenhoe	Essex
+0100	University of Mannheim, Mannheim	Mannheim
+0101	London School of Economics and Political Science, London	LSE
+0101	Universitat Pompeu Fabra, Barcelona	UPF
+0102	Institutions and Political Economy Research Group - University of Barcelona, Barcelona	Barcelona
+0103	IAST, Toulouse	IAST Toulouse
+0103	University of Essex, Colchester	Essex
+0104	University of Geneva, Geneva	Geneva
+0104	University of Lucerne, Lucerne	Lucerne
+0105	WU Wien, Vienna	WU Wien
+0106	Instituto de Ciências Sociais, Universidade de Lisboa, Lisboa	Lisbon
+0107	UCL, London	UCL
+0108	Bocconi University, Milan	Bocconi
+0108	London School of Economics and Political Science, London	LSE
+0109	University College London, London	London
+0110	University of Zurich, Zurich	Zurich
+0111	Center for Research and Social Progress, Ponte dell'Olio	CRSP Ponte dell'Olio
+0111	Tufts University, Boston	Tufts
+0111	Univeristy of Bologna, Bologna	Bologna
+0111	University of Milano-Bicocca, Milan	Milano-Bicocca
+0112	Predictive Heuristics., Tallinn	Predictive Heuristics
+0112	University of Essex, Colchester	Essex
+0113	PluriCourts, University of Oslo, Oslo	PluriCourts
+0114	University of Mannheim, Mannheim	Mannheim
+0115	Bocconi University, Milano	Bocconi
+0116	Duke University, Durham	Duke
+0116	IAST, Toulouse	IAST Toulouse
+0117	BI Norwegian Business School, Oslo	NBS Oslo
+0117	Norwegian Institute for Public Health, Oslo	NIPH Oslo
+0118	New York University, New York	NYU
+0119	University of Mannheim, Mannheim	Mannheim
+0120	German Development Institute, Bonn	GDI Bonn
+0120	University of Oxford, Oxford	Oxford
+0121	Birkbeck, University of London, London	Birkbeck
 0121	University of Oxford, Oxford	Oxford
-0122	Birkbeck, University of London, London	Birkbeck
-0122	University of Oxford, Oxford	Oxford
-0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
-0123	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
-0123	University of Oxford,Department of Political Science and International RelationsManor Road, Oxford	Oxford
-0124	European University Institute, Florence	EUI
-0124	London School of Economics and Political Science, London	LSE
-0125	University of Leeds, Leeds	Leeds
-0125	University of South Carolina, Columbia	USC
-0126	European University Institute, Firenze	EUI
-0127	Georgetown University, Washington	Georgetown
-0128	University of Manchester, Manchester	Manchester
-0129	New York University, New York	NYU
-0129	Universitat Pompeu Fabra, Barcelona	UPF
-0130	Harvard University, Cambridge	Harvard
-0130	Koç University, Istanbul	Koç
-0130	University of Colorado Boulder, Boulder	Boulder
-0131	Paris School of Economics - Université Paris 1 Pantheon Sorbonne, PARIS	Paris 1
-0132	West Virginia University, Morgantown	West Virginia
-0133	University of Zurich, Zurich	Zurich
-0134	Nuffield College, University of Oxford, Oxford, Yale University, New Haven	Oxford
-0135	NYU Abu Dhabi, Abu Dhabi	NYU Abu Dhabi
-0135	Yale University, New Haven	Yale
-0136	PluriCourts, University of Oslo, Oslo	PluriCourts
-0137	American University, Washington, DC	American
-0137	Texas A&M, College Station, TX	Texas A&M
+0122	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
+0122	Hertie SchoolBerlin's University of GovernanceFriedrichstrasse 18010117 Berlin, Germany, Berlin	Hertie
+0122	University of Oxford,Department of Political Science and International RelationsManor Road, Oxford	Oxford
+0123	European University Institute, Florence	EUI
+0123	London School of Economics and Political Science, London	LSE
+0124	University of Leeds, Leeds	Leeds
+0124	University of South Carolina, Columbia	USC
+0125	European University Institute, Firenze	EUI
+0126	Georgetown University, Washington	Georgetown
+0127	University of Manchester, Manchester	Manchester
+0128	New York University, New York	NYU
+0128	Universitat Pompeu Fabra, Barcelona	UPF
+0129	Harvard University, Cambridge	Harvard
+0129	Koç University, Istanbul	Koç
+0129	University of Colorado Boulder, Boulder	Boulder
+0130	Paris School of Economics - Université Paris 1 Pantheon Sorbonne, PARIS	Paris 1
+0131	West Virginia University, Morgantown	West Virginia
+0132	University of Zurich, Zurich	Zurich
+0133	Nuffield College, University of Oxford, Oxford, Yale University, New Haven	Oxford
+0134	NYU Abu Dhabi, Abu Dhabi	NYU Abu Dhabi
+0134	Yale University, New Haven	Yale
+0135	PluriCourts, University of Oslo, Oslo	PluriCourts
+0136	American University, Washington, DC	American
+0136	Texas A&M, College Station, TX	Texas A&M

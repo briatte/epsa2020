@@ -31,8 +31,8 @@ abstract	affiliation
 0016	Cyprus
 0016	Pittsburgh
 0016	Pittsburgh
-0017	UPF
-0018	Geneva
+0017	Geneva
+0018	UPF
 0019	Rice
 0019	Texas A&M
 0020	Humboldt
@@ -53,10 +53,10 @@ abstract	affiliation
 0024	Exeter
 0025	Texas A&M
 0025	Essex
-0026	Ben-Gurion
-0026	Leuven
-0026	Montreal
-0027	Mannheim
+0026	Mannheim
+0027	Ben-Gurion
+0027	Leuven
+0027	Montreal
 0028	Bocconi
 0028	ETH
 0029	Cologne
@@ -142,17 +142,17 @@ abstract	affiliation
 0075	UCSD
 0076	Mannheim
 0077	Penn
+0078	Oxford
 0078	Princeton
-0079	Columbia
 0079	Yale
-0080	IBEI Barcelona
-0080	UC Merced
-0080	Yale
-0081	Oxford
-0081	Princeton
+0079	Yale
+0080	Princeton
+0081	IBEI Barcelona
+0081	UC Merced
+0081	Yale
+0082	Columbia
 0082	Yale
-0082	Yale
-0083	Department
+0083	Texas A&M
 0084	Carlo Alberto
 0084	NYU
 0084	Yale
@@ -166,7 +166,7 @@ abstract	affiliation
 0089	LSE
 0090	Essex
 0090	Maryland
-0091	Texas A&M
+0091	HHL Leipzig
 0092	Essex
 0093	G-U Frankfurt
 0093	Humboldt
@@ -177,67 +177,66 @@ abstract	affiliation
 0096	IAS Vienna
 0097	LSE
 0098	Vanderbilt
-0099	HHL Leipzig
-0100	GWU
-0100	Zurich
-0101	Sciences Po
-0101	Cambridge
-0101	Essex
-0101	Mannheim
-0102	LSE
-0102	UPF
-0103	Barcelona
-0104	IAST Toulouse
-0104	Essex
-0105	Geneva
-0105	Lucerne
-0106	WU Wien
-0107	Lisbon
-0108	UCL
-0109	Bocconi
-0109	LSE
-0110	London
-0111	Zurich
-0112	CRSP Ponte dell'Olio
-0112	Tufts
-0112	Bologna
-0112	Milano-Bicocca
-0113	Predictive Heuristics
-0113	Essex
-0114	PluriCourts
-0115	Mannheim
-0116	Bocconi
-0117	Duke
-0117	IAST Toulouse
-0118	NBS Oslo
-0118	NIPH Oslo
-0119	NYU
-0120	Mannheim
-0121	GDI Bonn
+0099	GWU
+0099	Zurich
+0100	Sciences Po
+0100	Cambridge
+0100	Essex
+0100	Mannheim
+0101	LSE
+0101	UPF
+0102	Barcelona
+0103	IAST Toulouse
+0103	Essex
+0104	Geneva
+0104	Lucerne
+0105	WU Wien
+0106	Lisbon
+0107	UCL
+0108	Bocconi
+0108	LSE
+0109	London
+0110	Zurich
+0111	CRSP Ponte dell'Olio
+0111	Tufts
+0111	Bologna
+0111	Milano-Bicocca
+0112	Predictive Heuristics
+0112	Essex
+0113	PluriCourts
+0114	Mannheim
+0115	Bocconi
+0116	Duke
+0116	IAST Toulouse
+0117	NBS Oslo
+0117	NIPH Oslo
+0118	NYU
+0119	Mannheim
+0120	GDI Bonn
+0120	Oxford
+0121	Birkbeck
 0121	Oxford
-0122	Birkbeck
+0122	Hertie
+0122	Hertie
 0122	Oxford
-0123	Hertie
-0123	Hertie
-0123	Oxford
-0124	EUI
-0124	LSE
-0125	Leeds
-0125	USC
-0126	EUI
-0127	Georgetown
-0128	Manchester
-0129	NYU
-0129	UPF
-0130	Harvard
-0130	Koç
-0130	Boulder
-0131	Paris 1
-0132	West Virginia
-0133	Zurich
-0134	Oxford
-0135	NYU Abu Dhabi
-0135	Yale
-0136	PluriCourts
-0137	American
-0137	Texas A&M
+0123	EUI
+0123	LSE
+0124	Leeds
+0124	USC
+0125	EUI
+0126	Georgetown
+0127	Manchester
+0128	NYU
+0128	UPF
+0129	Harvard
+0129	Koç
+0129	Boulder
+0130	Paris 1
+0131	West Virginia
+0132	Zurich
+0133	Oxford
+0134	NYU Abu Dhabi
+0134	Yale
+0135	PluriCourts
+0136	American
+0136	Texas A&M
