@@ -258,7 +258,8 @@ stopifnot(!is.na(d$affiliation))
 p <- distinct(d, full_name, affiliation) %>%
   add_column(conference = "epsa2020", .before = 1) %>%
   mutate(
-    # `affiliation` is never missing here (otherwise, use `str_replace_na`)
+    # `affiliation` is actually never missing here, so `str_replace_na` is
+    # used only as a precaution here
     text = str_c(conference, full_name, str_replace_na(affiliation)),
     # create 32-length UIDs
     hash = map_chr(text, rlang::hash)
@@ -289,5 +290,5 @@ cat(
 
 readr::write_tsv(d, "data/program.tsv")
 
-# that was epic
+# that was pretty epic
 # kthxbye
