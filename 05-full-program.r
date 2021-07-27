@@ -165,6 +165,8 @@ d <- tidyr::unnest(d, matched) %>%
   # collapse multiple affiliations
   group_by(abstract_id, author) %>%
   mutate(affiliation = str_flatten(affiliation, collapse = " && ")) %>%
+  # remove duplicated rows
+  distinct() %>%
   ungroup()
 
 # n = 16 authors with multiple affiliations
@@ -268,6 +270,8 @@ d <- select(p, full_name, pid = hash) %>%
 stopifnot(!is.na(d$pid))
 
 # export ------------------------------------------------------------------
+
+stopifnot(!duplicated(d))
 
 cat(
   n_distinct(d$session_id), "sessions,",
