@@ -29,7 +29,7 @@ d <- map(f, read_html) %>%
       mods1 = html_node(.x, "meta[name='moderators']") %>%
         html_attr("content"),
       mods2 = html_node(.x, xpath = "//div[starts-with(text(), 'Moderator:')]") %>%
-        html_text(),
+        html_text(trim = TRUE),
       authors = html_node(.x, "meta[name='authors']") %>%
         html_attr("content"),
       affiliations = html_node(.x, "meta[name='affiliations']") %>%
