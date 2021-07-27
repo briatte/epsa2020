@@ -172,7 +172,12 @@ d <- tidyr::unnest(d, matched) %>%
 sum(str_detect(d$affiliation, "&&"))
 
 # sanity check: all abstract presenters are present in abstract authors
-stopifnot(d$abstract_presenters %in% d$author)
+y <- unique(d$abstract_presenters) %>%
+  str_split(",\\s") %>%
+  unlist() %>%
+  unique()
+
+stopifnot(y %in% d$author)
 
 # [NOTE] that happens because presenters are 'clipped' to the first presenter;
 #        things might change if we parse presenters better
