@@ -49,9 +49,8 @@ d <- map(f, read_html) %>%
       #        more than one underlined author... ?
       abstract_presenters = html_node(.x, "meta[name='presenters']") %>%
         html_attr("content"),
-      abstract_text = html_nodes(.x, ".abstracttext") %>%
-        map(html_text, trim = TRUE) %>%
-        map_chr(str_flatten, collapse = " ")
+      abstract_text = html_node(.x, ".abstracttext") %>%
+        html_text(trim = TRUE)
     ),
     .id = "abstract_id"
   ) %>%
