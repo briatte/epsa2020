@@ -45,10 +45,15 @@ d <- map(f, read_html) %>%
       # paper_type = html_node(.x, "meta[name='pres_type']") %>%
         # html_attr("content"),
       #
-      # [NOTE] presenter is always a single individual, even when there are
-      #        more than one underlined author... ?
-      abstract_presenters = html_node(.x, "meta[name='presenters']") %>%
-        html_attr("content"),
+      # [NOTE] meta tag is incomplete: presenter is always a single individual,
+      #        even when there is more than one underlined author, and is always
+      #        the first one of those (e.g. abstract_0032, abstract_0033)
+      # abstract_presenters = html_node(.x, "meta[name='presenters']") %>%
+        # html_attr("content"),
+      # correct extractor
+      abstract_presenters = html_nodes(.x, "div.authors u") %>%
+        html_text() %>%
+        str_c(collapse = ", "),
       abstract_text = html_node(.x, ".abstracttext") %>%
         html_text(trim = TRUE)
     ),
