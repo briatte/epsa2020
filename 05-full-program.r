@@ -277,7 +277,7 @@ stopifnot(!duplicated(p$hash))
 # add hashes to master data
 d <- select(p, full_name, pid = hash) %>%
   left_join(d, ., by = "full_name") %>%
-  relocate(pid, .before = full_name)
+  relocate(pid, .before = "full_name")
 
 # sanity check: no missing pid
 stopifnot(!is.na(d$pid))
