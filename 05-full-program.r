@@ -15,8 +15,8 @@ d <- map(f, read_html) %>%
       # [NOTE] those columns hold nothing of interest
       # session_short_title = html_node(.x, "meta[name='session_short_title']") %>%
       #  html_attr("content"),
-      # session_type = html_node(.x, "meta[name='session_type']") %>%
-      #  html_attr("content"),
+      session_type = html_node(.x, "meta[name='session_type']") %>%
+       html_attr("content"),
       # participants
       # [NOTE] missing affiliations for chairs...
       # [NOTE] missing affiliations for moderators...
